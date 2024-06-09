@@ -1,0 +1,40 @@
+{
+	"format_version": "1.20.81",
+	"animations": {
+		"animation.plasma_rifle.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"plasma_rifle": {
+					"rotation": [
+						102.62124,
+						59.5573,
+						-41.54769
+					],
+					"position": [
+						2,
+						8.5,
+						1.4
+					],
+					"scale": 2
+				}
+			}
+		},
+		"animation.plasma_rifle.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"plasma_rifle": {
+					"rotation": [
+						15.27573,
+						-1.02632,
+						-0.30006
+					],
+					"position": [
+						-4,
+						9,
+						-11
+					]
+				}
+			}
+		}
+	}
+}

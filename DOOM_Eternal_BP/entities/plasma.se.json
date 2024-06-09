@@ -1,0 +1,37 @@
+{
+    "format_version": "1.20.81",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "dea:plasma",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.25,
+                "height": 0.25
+            },
+            "minecraft:projectile": {
+                "is_dangerous": false,
+                "gravity": 0.0,
+                "homing": true,
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 6,
+                        "knockback": false
+                    }
+                },
+                "power": 1.3
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            }
+        }
+    }
+}

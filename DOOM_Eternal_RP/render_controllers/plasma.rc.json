@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.81",
+  "render_controllers": {
+    "controller.render.plasma": {
+		"geometry": "geometry.default",
+		"materials": [
+			{
+				"*": "material.default"
+			}
+		],
+		"textures": ["texture.default"]
+	}
+  }
+}
