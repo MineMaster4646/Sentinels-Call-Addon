@@ -12,5 +12,8 @@
   "devDependencies": {
     "@types/mojang-minecraft": "^0.1.11",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
   }
 }
