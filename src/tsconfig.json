@@ -2,9 +2,9 @@
     "compilerOptions": {
       "target": "ES2020",
       "module": "commonjs",
-      "outDir": "./bp/scripts",
+      "outDir": "./DOOM_Eternal-BP/scripts",
       "rootDir": "./src",
       "strict": true
     },
     "include": ["src/**/*"]
-}  
+}
