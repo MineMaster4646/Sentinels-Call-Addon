@@ -1,7 +1,3 @@
-// Import the necessary Minecraft classes
-const Minecraft = require('minecraft-addon-tools/minecraft');
-const adk = require('adk-lib');
-
 // Create a new projectile
 let plasmaProjectile = Minecraft.Projectile.create("dea:plasma");
 
@@ -25,7 +21,7 @@ Minecraft.registerComponent("dea:pr_shoot", {
     onItemUsed: function(eventData) {
         // If the item used is a diamond, fire the projectile
         if (eventData.item.name === "dea:plasma_rifle") {
-            firePlasma(eventData.player);
+            fireProjectile(eventData.player);
         }
     }
 });
