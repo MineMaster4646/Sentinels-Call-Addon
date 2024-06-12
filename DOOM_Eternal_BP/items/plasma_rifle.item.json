@@ -17,21 +17,31 @@
             "minecraft:hover_text_color": "blue",
             "minecraft:icon": "plasma_rifle",
             "minecraft:max_stack_size": 1,
-            "minecraft:shooter": {
-                "ammunition": [
+            "minecraft:trigger": {
+                "on_use": {
+                    "event": "shoot"
+                }
+            }
+        },
+        "events": {
+            "shoot": {
+                "sequence": [
                     {
-                        "item": "plasma",
-                        "use_offhand": false,
-                        "search_inventory": true,
-                        "use_in_creative": true
+                        "shoot": {
+                            "projectile": "dea:plasma",
+                                "launch_power": 2
+                        },
+                        "condition": "!query.is_sneaking"
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound firework.blast @a ~ ~ ~ 0.75 0.45 0.75",
+                                "playsound random.explode @a ~ ~ ~ 0.5 2 0.5"
+                            ]
+                        }
                     }
-                ],
-                "projectile": "dea:plasma",
-                "charge_time": 0.5,
-                "launch_power_scale": 1.0,
-                "launch_power_offset": 1.0,
-                "max_draw_duration": 0.5,
-                "needs_ammo": true
+                ]
             }
         }
     }

@@ -4,6 +4,9 @@
 	"texture_data": {
 		"plasma_rifle": {
 			"textures": "textures/items/plasma_rifle"
+		},
+		"plasma": {
+			"textures": "textures/items/plasma"
 		}
 	}
 }
