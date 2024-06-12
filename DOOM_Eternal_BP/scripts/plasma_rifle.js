@@ -21,7 +21,7 @@ function fireProjectile(player) {
 }
 
 // Register a custom component
-adk.registerComponent("dea:pr_shoot", {
+Minecraft.registerComponent("dea:pr_shoot", {
     onItemUsed: function(eventData) {
         // If the item used is a diamond, fire the projectile
         if (eventData.item.name === "dea:plasma_rifle") {
