@@ -16,7 +16,7 @@ system.onUseItem = function (eventData) {
 
         const spawnEventData = this.createEventData("minecraft:spawn_entity");
         spawnEventData.data = {
-            __identifier__: "minecraft:arrow",
+            __identifier__: "dea:plasma",
             x: position.data.x,
             y: position.data.y + 1.5,
             z: position.data.z,
