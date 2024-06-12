@@ -17,12 +17,7 @@
             "minecraft:hover_text_color": "blue",
             "minecraft:icon": "plasma_rifle",
             "minecraft:max_stack_size": 1,
-            "minecraft:custom_components": [
-                {
-                    "name": "dea:pr_shoot",
-                    "description": "This component handles shooting projectiles."
-                }
-            ]
+            "minecraft:custom_components": ["dea:pr_shoot"]
         }
     }
 }
