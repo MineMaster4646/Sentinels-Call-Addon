@@ -1,30 +1,31 @@
-const system = server.registerSystem(0, 0);
+// Import the necessary Minecraft classes
+const Minecraft = require('minecraft-addon-tools/minecraft');
+const adk = require('adk-lib');
 
-system.initialize = function () {
-    this.listenForEvent("minecraft:player_use_item", (eventData) => this.onUseItem(eventData));
-};
+// Create a new projectile
+let plasmaProjectile = Minecraft.Projectile.create("dea:plasma");
 
-system.onUseItem = function (eventData) {
-    const player = eventData.data.player;
-    const item = eventData.data.item;
+// Define the fireProjectile function
+function fireProjectile(player) {
+    // Get the player's location
+    let playerLocation = player.location;
 
-    // Check if the item being used is the one you want to trigger the projectile
-    // For example, you can check the item's identifier
-    if (item.__identifier__ === "dea:plasma_rifle") {
-        const position = this.getComponent(player, "minecraft:position");
-        const rotation = this.getComponent(player, "minecraft:rotation");
+    // Set the projectile's location to the player's location
+    plasmaProjectile.location = playerLocation;
 
-        const spawnEventData = this.createEventData("minecraft:spawn_entity");
-        spawnEventData.data = {
-            __identifier__: "dea:plasma",
-            x: position.data.x,
-            y: position.data.y + 1.5,
-            z: position.data.z,
-            velocityX: -Math.sin(rotation.data.y / 180 * Math.PI) * Math.cos(rotation.data.x / 180 * Math.PI),
-            velocityY: -Math.sin(rotation.data.x / 180 * Math.PI),
-            velocityZ: Math.cos(rotation.data.y / 180 * Math.PI) * Math.cos(rotation.data.x / 180 * Math.PI),
-        };
+    // Set the velocity of the projectile
+    plasmaProjectile.velocity = { x: 0, y: 1, z: 0 };
 
-        this.broadcastEvent("minecraft:spawn_entity", spawnEventData);
+    // Spawn the projectile
+    plasmaProjectile.spawn();
+}
+
+// Register a custom component
+adk.registerComponent("dea:pr_shoot", {
+    onItemUsed: function(eventData) {
+        // If the item used is a diamond, fire the projectile
+        if (eventData.item.name === "dea:plasma_rifle") {
+            firePlasma(eventData.player);
+        }
     }
-};
+});

@@ -17,7 +17,7 @@
             "minecraft:hover_text_color": "blue",
             "minecraft:icon": "plasma_rifle",
             "minecraft:max_stack_size": 1,
-            "plasma_rifle": {}
+            "pr_shoot": {}
         }
     }
 }
