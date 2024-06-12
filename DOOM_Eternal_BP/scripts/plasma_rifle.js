@@ -1,5 +1,5 @@
-import { world, ItemStack, Entity, Vector, system } from "@minecraft/server";
-import { ItemTypes, MinecraftEffectTypes, MinecraftItemTypes } from "@minecraft/server-gametest";
+import { world, Vector, system } from "@minecraft/server";
+import { ItemTypes } from "@minecraft/server-gametest";
 
 // Define the fireProjectile function
 function fireProjectile(player) {
@@ -11,12 +11,11 @@ function fireProjectile(player) {
 }
 
 // Register the event handler for item use
-world.events.beforeItemUse.subscribe(eventData => {
-    const item = eventData.item;
-    const player = eventData.source;
-    
-    // Check if the item used is the plasma rifle
-    if (item.typeId === "dea:plasma_rifle") {
-        fireProjectile(player);
-    }
-});
+system.runInterval(() => {
+    world.getPlayers().forEach(player => {
+        const heldItem = player.getComponent("minecraft:inventory").container.getItem(player.selectedSlot);
+        if (heldItem && heldItem.id === "dea:plasma_rifle") {
+            fireProjectile(player);
+        }
+    });
+}, 20); // Run every second
