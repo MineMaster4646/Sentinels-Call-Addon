@@ -1,4 +1,4 @@
-import { world, system, Player } from "@minecraft/server";
+import { world, system, Player, Vector } from "@minecraft/server";
 
 // Define the fireProjectile function
 function fireProjectile(player) {
@@ -6,7 +6,7 @@ function fireProjectile(player) {
 
     // Create and spawn the projectile
     const projectile = world.spawnEntity("dea:plasma", playerLocation);
-    projectile.applyImpulse({ x: 0, y: 1, z: 0 });
+    projectile.applyImpulse(new Vector(0, 1, 0));
 }
 
 // Register the event handler for item use
