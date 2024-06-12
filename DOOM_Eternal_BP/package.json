@@ -1,0 +1,19 @@
+{
+  "name": "doom-eternal-addon",
+  "version": "1.0.0",
+  "description": "![Project Logo](title.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@minecraft/server": "^1.13.0-beta.1.21.10-preview.23",
+    "@minecraft/server-admin": "^1.0.0-beta.1.21.10-preview.23",
+    "@minecraft/server-gametest": "^1.0.0-beta.1.21.10-preview.23",
+    "@minecraft/server-net": "^1.0.0-beta.1.21.10-preview.23",
+    "@minecraft/server-ui": "^1.3.0-beta.1.21.10-preview.23"
+  }
+}
