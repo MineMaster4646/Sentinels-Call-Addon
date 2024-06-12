@@ -1,27 +1,22 @@
-// Create a new projectile
-let plasmaProjectile = Minecraft.Projectile.create("dea:plasma");
+import { world, ItemStack, Entity, Vector, system } from "@minecraft/server";
+import { ItemTypes, MinecraftEffectTypes, MinecraftItemTypes } from "@minecraft/server-gametest";
 
 // Define the fireProjectile function
 function fireProjectile(player) {
-    // Get the player's location
-    let playerLocation = player.location;
-
-    // Set the projectile's location to the player's location
-    plasmaProjectile.location = playerLocation;
-
-    // Set the velocity of the projectile
-    plasmaProjectile.velocity = { x: 0, y: 1, z: 0 };
-
-    // Spawn the projectile
-    plasmaProjectile.spawn();
+    const playerLocation = player.location;
+    
+    // Create and spawn the projectile (assuming "dea:plasma" is a valid entity type)
+    const projectile = world.spawnEntity("dea:plasma", playerLocation);
+    projectile.setVelocity(new Vector(0, 1, 0));
 }
 
-// Register a custom component
-Minecraft.registerComponent("dea:pr_shoot", {
-    onItemUsed: function(eventData) {
-        // If the item used is a diamond, fire the projectile
-        if (eventData.item.name === "dea:plasma_rifle") {
-            fireProjectile(eventData.player);
-        }
+// Register the event handler for item use
+world.events.beforeItemUse.subscribe(eventData => {
+    const item = eventData.item;
+    const player = eventData.source;
+    
+    // Check if the item used is the plasma rifle
+    if (item.typeId === "dea:plasma_rifle") {
+        fireProjectile(player);
     }
 });
