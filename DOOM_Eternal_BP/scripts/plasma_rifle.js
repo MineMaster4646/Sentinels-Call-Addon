@@ -1,4 +1,4 @@
-import { world, system, Entity, Player } from "@minecraft/server";
+import { world, system, Player } from "@minecraft/server";
 
 // Define the fireProjectile function
 function fireProjectile(player) {
