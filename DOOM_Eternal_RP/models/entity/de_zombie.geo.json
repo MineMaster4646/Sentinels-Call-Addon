@@ -1,6 +1,6 @@
 {
 	"format_version": "1.8.0",
-	"geometry.doom_zombie": {
+	"geometry.de_zombie": {
 		"visible_bounds_width": 2,
 		"visible_bounds_height": 2,
 		"visible_bounds_offset": [0, 1, 0],
@@ -82,79 +82,6 @@
 				],
 				"mirror": true,
 				"parent": "body"
-			}
-		]
-	},
-	"geometry.doom_zombie": {
-		"texturewidth": 64,
-		"textureheight": 64,
-		"visible_bounds_width": 2,
-		"visible_bounds_height": 3,
-		"visible_bounds_offset": [0, 1.5, 0],
-		"bones": [
-			{
-				"name": "waist",
-				"pivot": [0, 12, 0]
-			},
-			{
-				"name": "body",
-				"parent": "waist",
-				"pivot": [0, 24, 0],
-				"cubes": [
-					{"origin": [-3.5, 12, -2], "size": [7, 12, 4], "uv": [0, 16]}
-				]
-			},
-			{
-				"name": "head",
-				"parent": "body",
-				"pivot": [0, 24, 0],
-				"cubes": [
-					{"origin": [-3.5, 24, -4], "size": [7, 8, 8], "uv": [0, 0]}
-				]
-			},
-			{
-				"name": "rightArm",
-				"parent": "body",
-				"pivot": [-4.5, 22, 0],
-				"cubes": [
-					{"origin": [-6.5, 12, -1.5], "size": [3, 12, 3], "uv": [0, 32], "mirror": true}
-				]
-			},
-			{
-				"name": "rightItem",
-				"parent": "rightArm",
-				"pivot": [-5.5, 15, 1]
-			},
-			{
-				"name": "leftArm",
-				"parent": "body",
-				"pivot": [4.5, 22, 0],
-				"mirror": true,
-				"cubes": [
-					{"origin": [3.5, 12, -1.5], "size": [3, 12, 3], "uv": [0, 32], "mirror": false}
-				]
-			},
-			{
-				"name": "leftItem",
-				"parent": "leftArm",
-				"pivot": [5.5, 15, 1]
-			},
-			{
-				"name": "rightLeg",
-				"parent": "body",
-				"pivot": [-1.4, 12, 0],
-				"cubes": [
-					{"origin": [-3.4, 0, -2], "size": [3, 12, 4], "uv": [22, 16], "mirror": true}
-				]
-			},
-			{
-				"name": "leftLeg",
-				"parent": "body",
-				"pivot": [1.4, 12, 0],
-				"mirror": true,
-				"cubes": [
-					{"origin": [0.4, 0, -2], "size": [3, 12, 4], "uv": [22, 16], "mirror": false}
-				]
 			}
 		]
 	}

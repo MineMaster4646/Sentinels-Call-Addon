@@ -7,10 +7,10 @@
                 "default": "entity_emissive_alpha"
             },
             "textures": {
-                "default": "textures/entity/zombie"
+                "default": "textures/entity/de_zombie"
             },
             "geometry": {
-                "default": "geometry.zombie"
+                "default": "geometry.de_zombie"
             },
             "render_controllers": ["controller.render.zombie"]
         }
