@@ -9,6 +9,6 @@ function findPlayersInSurvivalMode(location) {
     return players;
 }
 // Example usage
-const playerLocation = { x: 10, y: 20, z: 30 };
+const playerLocation = { x: 10, y: -60, z: 10 };
 const playersInSurvivalMode = findPlayersInSurvivalMode(playerLocation);
 console.log(playersInSurvivalMode);

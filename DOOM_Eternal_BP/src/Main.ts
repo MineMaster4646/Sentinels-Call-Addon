@@ -12,6 +12,6 @@ function findPlayersInSurvivalMode(location: Vector3): Player[] {
 }
 
 // Example usage
-const playerLocation: Vector3 = { x: 10, y: 20, z: 30 };
+const playerLocation: Vector3 = { x: 10, y: -60, z: 10 };
 const playersInSurvivalMode: Player[] = findPlayersInSurvivalMode(playerLocation);
 console.log(playersInSurvivalMode);
