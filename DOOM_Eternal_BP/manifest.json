@@ -9,6 +9,10 @@
   },
   "modules": [
     {
+      "type": "data",
+      "uuid": "676a73ab-6be7-44c7-ba1f-2c98ffc1dfe6"
+    },
+    {
       "type": "script",
       "language": "javascript",
       "uuid": "360a4198-f969-4827-bf67-38594ea24a73",
