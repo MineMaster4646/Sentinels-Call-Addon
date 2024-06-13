@@ -4,12 +4,10 @@
         {
             "type": "minecraft-js",
             "request": "attach",
-            "name": "Debug with Minecraft",
+            "name": "Attach to Minecraft",
             "mode": "connect",
-            "preLaunchTask": "build",
-            "targetModuleUuid": "360a4198-f969-4827-bf67-38594ea24a73",
-            "sourceMapRoot": "${workspaceFolder}/DOOM_Eternal_BP/src/",
-            "generatedSourceRoot": "${workspaceFolder}/DOOM_Eternal_BP/scripts/",
+            "localRoot": "${workspaceFolder}",
+            "host": "localhost",
             "port": 19144
         }
     ]
