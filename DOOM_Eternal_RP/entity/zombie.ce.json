@@ -1,0 +1,18 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "dea:zombie",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/zombie"
+            },
+            "geometry": {
+                "default": "geometry.zombie"
+            },
+            "render_controllers": ["controller.render.zombie"]
+        }
+    }
+}
