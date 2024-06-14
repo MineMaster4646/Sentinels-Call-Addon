@@ -8,13 +8,9 @@
             }
         },
         "components": {
-            "minecraft:display_name": {
-            "value": "Plasma Rifle"
-            },
             "minecraft:durability": {
                 "max_durability": 200
             },
-            "minecraft:hover_text_color": "blue",
             "minecraft:icon": "plasma_rifle",
             "minecraft:max_stack_size": 1
         }
