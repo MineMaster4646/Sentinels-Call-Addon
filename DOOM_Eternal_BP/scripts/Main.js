@@ -1,14 +1,8 @@
-import { GameMode, world } from '@minecraft/server';
-// Example function that uses the provided types
-function findPlayersInSurvivalMode(location) {
-    const options = {
-        gameMode: GameMode.survival,
-        location: location,
-    };
-    const players = world.getPlayers(options);
-    return players;
+import { world, system } from "@minecraft/server";
+function mainTick() {
+    if (system.currentTick % 100 === 0) {
+        world.sendMessage("Hello starter! Tick: " + system.currentTick);
+    }
+    system.run(mainTick);
 }
-// Example usage
-const playerLocation = { x: 10, y: -60, z: 10 };
-const playersInSurvivalMode = findPlayersInSurvivalMode(playerLocation);
-console.log(playersInSurvivalMode);
+system.run(mainTick);

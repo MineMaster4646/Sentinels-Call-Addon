@@ -1,17 +1,11 @@
-import { Player, EntityQueryOptions, GameMode, Vector3, world } from '@minecraft/server';
+import { world, system } from "@minecraft/server";
 
-// Example function that uses the provided types
-function findPlayersInSurvivalMode(location: Vector3): Player[] {
-  const options: EntityQueryOptions = {
-    gameMode: GameMode.survival,
-    location: location,
-  };
+function mainTick() {
+  if (system.currentTick % 100 === 0) {
+    world.sendMessage("Hello starter! Tick: " + system.currentTick);
+  }
 
-  const players: Player[] = world.getPlayers(options);
-  return players;
+  system.run(mainTick);
 }
 
-// Example usage
-const playerLocation: Vector3 = { x: 10, y: -60, z: 10 };
-const playersInSurvivalMode: Player[] = findPlayersInSurvivalMode(playerLocation);
-console.log(playersInSurvivalMode);
+system.run(mainTick);
