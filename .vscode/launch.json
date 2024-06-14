@@ -1,15 +1,16 @@
 {
     "version": "0.3.0",
     "configurations": [
-    
-        {
-            "type": "minecraft-js",
-            "request": "attach",
-            "name": "Attach to Minecraft",
-            "mode": "connect",
-            "localRoot": "${workspaceFolder}",
-            "host": "localhost",
-            "port": 19144
-        }
+      {
+        "type": "minecraft-js",
+        "request": "attach",
+        "name": "Debug with Minecraft",
+        "mode": "connect",
+        "preLaunchTask": "build",
+        "targetModuleUuid": "360a4198-f969-4827-bf67-38594ea24a73",
+        "sourceMapRoot": "${workspaceFolder}/DOOM_Eternal_BP/debug/",
+        "generatedSourceRoot": "${workspaceFolder}/DOOM_Eternal_BP/scripts/",
+        "port": 19144
+     }
     ]
-}
+  }
