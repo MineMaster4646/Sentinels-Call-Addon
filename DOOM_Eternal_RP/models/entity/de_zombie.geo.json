@@ -13,36 +13,36 @@
 			"bones": [
 				{
 					"name": "zombie",
-					"pivot": [0, 0, -1]
-				},
-				{
-					"name": "body",
-					"parent": "zombie",
-					"pivot": [0, 18, -0.5],
-					"cubes": [
-						{"origin": [-4, 12, -2], "size": [7, 12, 4], "uv": [0, 16]}
-					]
+					"pivot": [0, 0, 0]
 				},
 				{
 					"name": "head",
-					"parent": "body",
-					"pivot": [0, 24, -1],
+					"parent": "zombie",
+					"pivot": [-0.5, 24, 0],
 					"cubes": [
 						{"origin": [-4, 24, -4], "size": [7, 8, 8], "uv": [0, 0]}
 					]
 				},
 				{
+					"name": "body",
+					"parent": "zombie",
+					"pivot": [-0.5, 18, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [7, 12, 4], "uv": [0, 16]}
+					]
+				},
+				{
 					"name": "right_arm",
-					"parent": "body",
-					"pivot": [-19, 22, 0],
+					"parent": "zombie",
+					"pivot": [-5.5, 24, 0],
 					"cubes": [
 						{"origin": [-7, 12, -1.5], "size": [3, 12, 3], "uv": [0, 32]}
 					]
 				},
 				{
 					"name": "left_arm",
-					"parent": "body",
-					"pivot": [11, 22, -1],
+					"parent": "zombie",
+					"pivot": [4.5, 24, 0],
 					"mirror": true,
 					"cubes": [
 						{"origin": [3, 12, -1.5], "size": [3, 12, 3], "uv": [0, 32]}
@@ -50,16 +50,16 @@
 				},
 				{
 					"name": "right_leg",
-					"parent": "body",
-					"pivot": [-9.9, 12, -1],
+					"parent": "zombie",
+					"pivot": [-2.5, 12, 0],
 					"cubes": [
 						{"origin": [-4, 0, -2], "size": [3, 12, 4], "uv": [22, 16]}
 					]
 				},
 				{
 					"name": "left_leg",
-					"parent": "body",
-					"pivot": [1.9, 12, -1],
+					"parent": "zombie",
+					"pivot": [1.5, 12, 0],
 					"mirror": true,
 					"cubes": [
 						{"origin": [0, 0, -2], "size": [3, 12, 4], "uv": [22, 16]}
