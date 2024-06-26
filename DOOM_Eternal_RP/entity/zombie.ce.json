@@ -2,17 +2,25 @@
     "format_version": "1.21.0",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "dea:zombie",
+            "identifier": "sc:zombie",
             "materials": {
                 "default": "entity_emissive_alpha"
             },
             "textures": {
-                "default": "textures/entity/de_zombie"
+                "default": "textures/entity/sc_zombie"
             },
             "geometry": {
-                "default": "geometry.de_zombie"
+                "default": "geometry.sc_zombie"
             },
-            "render_controllers": ["controller.render.zombie"]
+            "animations": {
+                "sc_zombie_controller": "controller.animation.sc_zombie"
+            },
+            "scripts": {
+                "animate": [
+                    "sc_zombie_controller"
+                ]
+            },
+            "render_controllers": ["controller.render.sc_zombie"]
         }
     }
 }

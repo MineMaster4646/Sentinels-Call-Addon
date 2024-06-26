@@ -1,7 +1,7 @@
 {
 	"format_version": "1.21.0",
 	"animations": {
-		"animation.de_zombie.idle": {
+		"animation.sc_zombie.idle": {
 			"loop": true,
 			"animation_length": 3.6,
 			"bones": {

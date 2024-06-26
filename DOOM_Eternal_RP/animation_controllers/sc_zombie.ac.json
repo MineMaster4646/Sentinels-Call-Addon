@@ -1,0 +1,26 @@
+{
+    "format_version": "1.21.0",
+    "animation_controllers": {
+        "controller.animation.sc_zombie":{
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "animations": ["animation.sc_zombie.idle"],
+                    "transitions": [
+                        {
+                            "moving: "q.is_moving"
+                        }
+                    ]
+                },
+                "moving": {
+                    "animations": ["animation.sc_zombie.walk"],
+                    "transitions": [
+                        {
+                            "idle: "!q.is_moving"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}   

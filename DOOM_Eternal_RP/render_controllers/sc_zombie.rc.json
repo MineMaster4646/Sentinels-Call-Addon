@@ -1,0 +1,14 @@
+{
+    "format_version": "1.21.0",
+    "render_controllers": {
+      "controller.render.sc_zombie": {
+          "geometry": "geometry.default",
+          "materials": [
+              {
+                  "*": "material.default"
+              }
+          ],
+          "textures": ["texture.default"]
+      }
+    }
+  }
