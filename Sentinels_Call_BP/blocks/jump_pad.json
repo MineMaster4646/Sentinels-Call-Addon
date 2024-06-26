@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sc:jump_pad",
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:geometry": "geometry.jump_pad",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "sc_jump_pad",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					2,
+					14
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					2,
+					14
+				]
+			},
+			"minecraft:block_light_emission": 0.8,
+			"minecraft:creative_category": {
+				"category": "construction"
+			}
+		}
+	}
+}

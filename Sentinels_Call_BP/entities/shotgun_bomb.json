@@ -1,0 +1,69 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:shotgun_bomb",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:egg"
+		},
+		"component_groups": {
+			"exploder": {}
+		},
+		"components": {
+			"minecraft:projectile": {
+				"gravity": 0.08,
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "explode"
+						}
+					}
+				},
+				"anchor": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0.2,
+				"height": 0.2
+			},
+			"minecraft:explode": {
+				"breaks_blocks": false,
+				"power": 0.5,
+				"fuse_length": 2,
+				"fuse_lit": true
+			},
+			"minecraft:timer": {
+				"time_down_event": {
+					"event": "explode"
+				},
+				"time": 1,
+				"looping": true
+			}
+		},
+		"events": {
+			"explode": {
+				"add": {
+					"component_groups": [
+						"exploder"
+					]
+				},
+				"run_command": {
+					"command": [
+						"execute @e[c=1,type=!sc:shotgun_bomb,type=!sc:dash,r=2] ~ ~ ~ tp @e[type=sc:shotgun_bomb,c=1] ~ ~1 ~"
+					]
+				}
+			},
+			"stick": {
+				"run_command": {
+					"command": [
+						"execute @s ~ ~ ~ execute @e[c=1,type=!sc:shotgun_bomb,r=3,type=!sc:dash] ~ ~ ~ tp @e[type=sc:shotgun_bomb,c=1] ~ ~1 ~"
+					]
+				}
+			}
+		}
+	}
+}

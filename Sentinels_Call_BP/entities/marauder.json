@@ -1,0 +1,107 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:marauder",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"shielded": {
+				"minecraft:damage_sensor": {
+					"triggers": [
+						{
+							"cause": "all",
+							"deals_damage": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:physics": {},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.98
+			},
+			"minecraft:health": {
+				"value": 50
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 5
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 5,
+				"xz_dist": 10,
+				"y_dist": 3,
+				"interval": 150,
+				"speed_multiplier": 1
+			},
+			"minecraft:movement": {
+				"value": 0.5
+			},
+			"minecraft:movement.generic": {},
+			"minecraft:movement.basic": {},
+			"minecraft:navigation.walk": {
+				"is_amphibious": false,
+				"can_walk": true
+			},
+			"minecraft:equipment": {
+				"table": "loot_tables/marauder_axe.json"
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": [
+							{
+								"test": "distance_to_nearest_player",
+								"value": 3,
+								"operator": "<",
+								"subject": "self"
+							}
+						],
+						"event": "shield_up"
+					},
+					{
+						"filters": [
+							{
+								"test": "distance_to_nearest_player",
+								"value": 3,
+								"operator": ">",
+								"subject": "self"
+							}
+						],
+						"event": "shield_down"
+					}
+				]
+			}
+		},
+		"events": {
+			"shield_up": {
+				"add": {
+					"component_groups": [
+						"shielded"
+					]
+				},
+				"run_command": {
+					"command": [
+						"tag @s add shielded"
+					]
+				}
+			},
+			"shield_down": {
+				"remove": {
+					"component_groups": [
+						"shielded"
+					]
+				},
+				"run_command": {
+					"command": [
+						"tag @s remove shielded"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chaingun.spin": {
+			"animation_length": 1,
+			"bones": {
+				"rotator": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							-360
+						]
+					}
+				},
+				"barrel1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							"v.rot_amount"
+						]
+					}
+				},
+				"barrel2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							"v.rot_amount"
+						]
+					}
+				},
+				"barrel3": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							"v.rot_amount"
+						]
+					}
+				},
+				"barrel4": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							0,
+							"v.rot_amount"
+						]
+					}
+				}
+			},
+			"loop": true
+		}
+	}
+}

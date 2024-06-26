@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:dash",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"instant_despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:behavior.knockback_roar": {
+				"priority": 0,
+				"attack_time": 0.1,
+				"duration": 0.1,
+				"knockback_strength": 1.75,
+				"knockback_range": 10,
+				"knockback_filters": {
+					"all_of": [
+						{
+							"subject": "other",
+							"test": "has_equipment",
+							"domain": "feet",
+							"value": "sc:praetor_boots"
+						}
+					]
+				},
+				"on_roar_end": {
+					"event": "despawn"
+				},
+				"knockback_damage": 0
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"instant_despawn"
+					]
+				}
+			}
+		}
+	}
+}

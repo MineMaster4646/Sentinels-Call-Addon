@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sc:chainsaw",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:damage": 9,
+			"minecraft:hand_equipped": true,
+			"minecraft:icon": {
+				"texture": "slayer_blade"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:weapon": {},
+			"tag:minecraft:is_sword": {}
+		},
+		"events": {}
+	}
+}

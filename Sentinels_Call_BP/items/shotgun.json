@@ -1,0 +1,80 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sc:shotgun",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "sc_shotgun"
+			},
+			"tag:gun": {},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "shoot"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "shotgun_shoot",
+				"duration": 1
+			},
+			"minecraft:max_stack_size": 1
+		},
+		"events": {
+			"shoot": {
+				"sequence": [
+					{
+						"shoot": {
+							"projectile": "sc:bullet2",
+							"launch_power": 2
+						},
+						"condition": "!query.is_sneaking"
+					},
+					{
+						"shoot": {
+							"projectile": "sc:bullet2",
+							"launch_power": 2
+						},
+						"condition": "!query.is_sneaking"
+					},
+					{
+						"shoot": {
+							"projectile": "sc:bullet2",
+							"launch_power": 2
+						},
+						"condition": "!query.is_sneaking"
+					},
+					{
+						"shoot": {
+							"projectile": "sc:bullet2",
+							"launch_power": 2
+						},
+						"condition": "!query.is_sneaking"
+					},
+					{
+						"shoot": {
+							"projectile": "sc:bullet2",
+							"launch_power": 2
+						},
+						"condition": "!query.is_sneaking"
+					},
+					{
+						"shoot": {
+							"projectile": "sc:shotgun_bomb",
+							"launch_power": 2
+						},
+						"condition": "query.is_sneaking"
+					},
+					{
+						"run_command": {
+							"command": [
+								"playsound random.explode @a ~ ~ ~ 0.75 1.5 0.75"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

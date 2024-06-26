@@ -1,0 +1,318 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shotgun",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "pole",
+					"pivot": [
+						0,
+						23,
+						0
+					],
+					"rotation": [
+						0,
+						45,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "bone2",
+					"parent": "pole",
+					"pivot": [
+						0,
+						11.75,
+						0
+					]
+				},
+				{
+					"name": "handle",
+					"parent": "bone2",
+					"pivot": [
+						0,
+						10.5,
+						0.4
+					],
+					"rotation": [
+						30,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								9,
+								-0.85
+							],
+							"size": [
+								1,
+								5,
+								2
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone2",
+					"pivot": [
+						0,
+						11.75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								10.75,
+								-6
+							],
+							"size": [
+								1,
+								2,
+								2
+							],
+							"uv": [
+								0,
+								9
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								10.75,
+								-4
+							],
+							"size": [
+								1,
+								0,
+								3
+							],
+							"uv": [
+								3,
+								0
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								11.25,
+								-14
+							],
+							"size": [
+								1,
+								1,
+								8
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "barrel",
+					"parent": "bone2",
+					"pivot": [
+						0,
+						13.75,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								12.25,
+								-15.25
+							],
+							"size": [
+								2,
+								2,
+								22
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-1,
+								14.2,
+								-3.9
+							],
+							"size": [
+								2,
+								1,
+								7
+							],
+							"inflate": -0.01,
+							"uv": [
+								0,
+								9
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								11.25,
+								3.6
+							],
+							"size": [
+								1,
+								1,
+								3
+							],
+							"inflate": 0.1,
+							"uv": [
+								11,
+								9
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								10.75,
+								2.4
+							],
+							"size": [
+								1,
+								2,
+								1
+							],
+							"inflate": 0.1,
+							"uv": [
+								10,
+								0
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								13.75,
+								-15.1
+							],
+							"size": [
+								1,
+								2,
+								11
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								24
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								15.75,
+								-3.9
+							],
+							"size": [
+								1,
+								1,
+								1
+							],
+							"uv": [
+								10,
+								6
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								14.75,
+								-3.9
+							],
+							"size": [
+								1,
+								1,
+								5
+							],
+							"uv": [
+								10,
+								0
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								12.55,
+								-15.35
+							],
+							"size": [
+								1,
+								3,
+								0
+							],
+							"uv": [
+								6,
+								3
+							]
+						}
+					]
+				},
+				{
+					"name": "pump",
+					"parent": "barrel",
+					"pivot": [
+						0,
+						12.5,
+						-9
+					],
+					"rotation": [
+						0,
+						0,
+						45
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.25,
+								10.75,
+								-13
+							],
+							"size": [
+								2,
+								2,
+								5
+							],
+							"uv": [
+								13,
+								24
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

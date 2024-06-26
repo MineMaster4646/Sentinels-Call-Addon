@@ -2,11 +2,47 @@
 	"resource_pack_name": "sentinels_call_rp",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"plasma_rifle": {
+		"sc_plasma_rifle": {
 			"textures": "textures/items/plasma_rifle"
 		},
-		"plasma": {
+		"sc_plasma": {
 			"textures": "textures/items/plasma"
+		},
+		"sc_shotgun": {
+			"textures": "textures/items/shotgun"
+		},
+		"sc_heavy_cannon": {
+			"textures": "textures/items/heavy_cannon"
+		},
+		"sc_praetor_helmet": {
+			"textures": "textures/items/praetor_helmet"
+		},
+		"sc_praetor_chestplate": {
+			"textures": "textures/items/praetor_chestplate"
+		},
+		"sc_praetor_leggings": {
+			"textures": "textures/items/praetor_leggings"
+		},
+		"sc_praetor_boots": {
+			"textures": "textures/items/praetor_boots"
+		},
+		"sc_bfg": {
+			"textures": "textures/items/bfg"
+		},
+		"sc_super_shotgun": {
+			"textures": "textures/items/super_shotgun"
+		},
+		"sc_slayer_blade": {
+			"textures": "textures/items/slayer_blade"
+		},
+		"sc_crucible": {
+			"textures": "textures/items/crucible"
+		},
+		"sc_axe": {
+			"textures": "textures/items/axe"
+		},
+		"sc_chaingun": {
+			"textures": "textures/items/chaingun"
 		}
 	}
 }

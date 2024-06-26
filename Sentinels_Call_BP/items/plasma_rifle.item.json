@@ -2,7 +2,7 @@
     "format_version": "1.21.0",
     "minecraft:item": {
         "description": {
-            "identifier": "dea:plasma_rifle",
+            "identifier": "sc:plasma_rifle",
             "menu_category": {
                 "category": "equipment"
             }

@@ -2,7 +2,7 @@
     "format_version": "1.21.0",
     "minecraft:item": {
         "description": {
-            "identifier": "dea:plasma",
+            "identifier": "sc:plasma",
             "menu_category": {
                 "category": "equipment"
             }

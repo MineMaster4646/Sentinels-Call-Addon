@@ -1,0 +1,39 @@
+{
+	"netherrack": {
+		"isotropic": {
+			"up": true,
+			"down": true
+		},
+		"textures": {
+			"side": "netherrack",
+			"down": "netherrack",
+			"up": "netherrack_top"
+		},
+		"sound": "netherrack"
+	},
+	"nether_gold_ore": {
+		"textures": {
+			"side": "nether_gold_ore",
+			"down": "nether_gold_ore",
+			"up": "nether_gold_ore_top"
+		},
+		"sound": "nether_gold_ore"
+	},
+	"quartz_ore": {
+		"textures": {
+			"side": "quartz_ore",
+			"down": "quartz_ore",
+			"up": "quartz_ore_top"
+		},
+		"sound": "nether_gold_ore"
+	},
+	"sc:ledge": {
+		"sound": "stone"
+	},
+	"sc:swingbar": {
+		"sound": "stone"
+	},
+	"sc:jump_pad": {
+		"sound": "stone"
+	}
+}

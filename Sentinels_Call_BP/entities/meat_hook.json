@@ -1,0 +1,141 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:meat_hook",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:egg"
+		},
+		"component_groups": {
+			"destroyer": {
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"event": "unride",
+						"filters": {
+							"test": "distance_to_nearest_player",
+							"operator": "<",
+							"value": 2
+						}
+					}
+				}
+			},
+			"despawner": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.15,
+				"height": 0.15
+			},
+			"minecraft:projectile": {
+				"power": 2,
+				"gravity": 0.07,
+				"uncertaintyBase": 0,
+				"uncertaintyMultiplier": 0,
+				"anchor": 1,
+				"shouldbounce": true,
+				"offset": [
+					0,
+					0.1,
+					0
+				],
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"impact_damage": {
+						"damage": 3
+					},
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "stop_hook",
+							"filters": [
+								{
+									"subject": "self",
+									"test": "distance_to_nearest_player",
+									"value": 3,
+									"operator": ">"
+								}
+							]
+						}
+					}
+				},
+				"liquid_inertia": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:spawn_entity": {
+				"entities": {
+					"should_leash": true,
+					"num_to_spawn": 1,
+					"spawn_entity": "sc:meat_hook_ride",
+					"single_use": true,
+					"min_wait_time": 0,
+					"max_wait_time": 0
+				}
+			},
+			"minecraft:timer": {
+				"time": 1,
+				"time_down_event": {
+					"event": "add_destroyer"
+				}
+			},
+			"minecraft:despawn": {
+				"despawn_from_distance": {
+					"max_distance": 32,
+					"min_distance": 24
+				}
+			}
+		},
+		"events": {
+			"add_destroyer": {
+				"add": {
+					"component_groups": [
+						"destroyer"
+					]
+				}
+			},
+			"unride": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"ride @p[r=1.5] stop_riding"
+							]
+						}
+					}
+				]
+			},
+			"add_despawn": {
+				"add": {
+					"component_groups": [
+						"despawner"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"destroyer"
+					]
+				}
+			},
+			"start_despawn": {
+				"run_command": {
+					"command": [
+						"execute @p ~ ~ ~ event entity @e[c=1,type=sc:meat_hook,r=4] add_despawn"
+					]
+				}
+			},
+			"stop_hook": {
+				"run_command": {
+					"command": [
+						"execute @s ~ ~ ~ tp @s ~ ~ ~",
+						"playsound random.anvil_land @a ~ ~ ~ 1 0.75 1"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,159 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sc:ledge",
+			"is_experimental": false,
+			"properties": {
+				"sc:rot": [
+					2,
+					3,
+					4,
+					5
+				],
+				"sc:inv": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.ledge",
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					10,
+					7.99
+				],
+				"size": [
+					16,
+					6,
+					0.01
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-8,
+					10,
+					8
+				],
+				"size": [
+					16,
+					6,
+					0
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "rotate"
+			},
+			"minecraft:block_light_emission": 0.1,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:on_interact": {
+				"condition": "query.get_equipped_item_name=='diamond'",
+				"event": "invis"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "sc_ledge_inv",
+					"render_method": "blend",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:creative_category": {
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('sc:rot') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sc:rot') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sc:rot') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sc:rot') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('sc:inv') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sc_ledge",
+							"render_method": "blend",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('sc:inv') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sc_ledge_inv",
+							"render_method": "blend",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			}
+		],
+		"events": {
+			"rotate": {
+				"set_block_property": {
+					"sc:rot": "query.cardinal_facing_2d"
+				}
+			},
+			"invis": {
+				"sequence": [
+					{
+						"condition": "query.block_property('sc:inv')==0",
+						"set_block_property": {
+							"sc:inv": 1
+						}
+					},
+					{
+						"condition": "query.block_property('sc:inv')==1",
+						"set_block_property": {
+							"sc:inv": 0
+						}
+					}
+				]
+			}
+		}
+	}
+}

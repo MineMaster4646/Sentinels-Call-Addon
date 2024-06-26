@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.marauder.hold_axe": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [
+						0,
+						0,
+						-15
+					]
+				},
+				"rightArm": {
+					"rotation": [
+						0,
+						0,
+						17.5
+					]
+				},
+				"rightItem": {
+					"rotation": [
+						25,
+						30,
+						0
+					]
+				},
+				"leftLeg": {
+					"position": [
+						0.75,
+						0,
+						0
+					]
+				},
+				"rightLeg": {
+					"position": [
+						-0.75,
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

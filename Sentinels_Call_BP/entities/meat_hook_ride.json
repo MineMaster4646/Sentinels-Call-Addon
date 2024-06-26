@@ -1,0 +1,151 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:meat_hook_ride",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"instant_destroy": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 1
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": false
+			},
+			"minecraft:leashable": {
+				"soft_distance": 0,
+				"can_be_stolen": false,
+				"max_distance": 128,
+				"hard_distance": 1,
+				"on_unleash": {
+					"event": "kill_lead"
+				}
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:rideable": {
+				"family_types": [
+					"player",
+					"seat"
+				],
+				"crouching_skip_interact": false,
+				"pull_in_entities": false,
+				"rider_can_interact": false,
+				"seat_count": 1,
+				"seats": [
+					{
+						"position": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "rider_count",
+									"operator": "==",
+									"value": 0,
+									"subject": "self"
+								},
+								{
+									"test": "has_tag",
+									"subject": "self",
+									"value": "ridden"
+								}
+							]
+						},
+						"event": "destroy_event"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "rider_count",
+									"operator": "==",
+									"value": 0,
+									"subject": "self"
+								}
+							]
+						},
+						"event": "ride_event"
+					},
+					{
+						"filters": [
+							{
+								"test": "rider_count",
+								"subject": "self",
+								"value": 1,
+								"operator": "=="
+							}
+						],
+						"event": "tag_event"
+					}
+				]
+			},
+			"minecraft:addrider": {
+				"entity_type": "sc:meat_hook_ride2"
+			},
+			"minecraft:timer": {
+				"time": 0.3,
+				"looping": true,
+				"time_down_event": {
+					"event": "play_chain"
+				}
+			},
+			"minecraft:movement": {
+				"value": 1
+			}
+		},
+		"events": {
+			"destroy_event": {
+				"add": {
+					"component_groups": [
+						"instant_destroy"
+					]
+				}
+			},
+			"tag_event": {
+				"run_command": {
+					"command": [
+						"tag @s add ridden"
+					]
+				}
+			},
+			"play_chain": {
+				"run_command": {
+					"command": [
+						"playsound dig.chain @a ~ ~ ~"
+					]
+				}
+			},
+			"kill_lead": {
+				"run_command": {
+					"command": [
+						"kill @e[type=item,r=5,name=lead]"
+					]
+				}
+			}
+		}
+	}
+}

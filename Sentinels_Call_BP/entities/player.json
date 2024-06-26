@@ -1,0 +1,675 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"minecraft:add_bad_omen": {
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "bad_omen",
+							"duration": 6000,
+							"display_on_screen_animation": true
+						}
+					]
+				},
+				"minecraft:timer": {
+					"time": [
+						0,
+						0
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:clear_add_bad_omen",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:clear_bad_omen_spell_effect": {
+				"minecraft:spell_effects": {}
+			},
+			"minecraft:raid_trigger": {
+				"minecraft:raid_trigger": {
+					"triggered_event": {
+						"event": "minecraft:remove_raid_trigger",
+						"target": "self"
+					}
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": "bad_omen"
+				}
+			},
+			"dash": {
+				"minecraft:timer": {
+					"time": 0.4,
+					"time_down_event": {
+						"event": "end_dash1"
+					}
+				}
+			},
+			"praetor_fall": {
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "fall",
+						"deals_damage": false
+					}
+				}
+			},
+			"swing": {
+				"minecraft:timer": {
+					"time": 0.1,
+					"time_down_event": {
+						"event": "end_climb"
+					}
+				}
+			},
+			"dash2": {
+				"minecraft:timer": {
+					"time": 0.4,
+					"time_down_event": {
+						"event": "end_dash2"
+					}
+				}
+			},
+			"speed": {
+				"minecraft:movement": {
+					"value": 0.2
+				}
+			},
+			"no_speed": {
+				"minecraft:movement": {
+					"value": 0.1
+				}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "math.min(query.player_level*7,100)"
+			},
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:is_hidden_when_invisible": {},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:hurt_on_condition": {
+				"damage_conditions": [
+					{
+						"filters": {
+							"test": "in_lava",
+							"subject": "self",
+							"operator": "==",
+							"value": true
+						},
+						"cause": "lava",
+						"damage_per_tick": 4
+					}
+				]
+			},
+			"minecraft:player.saturation": {
+				"value": 20
+			},
+			"minecraft:player.exhaustion": {
+				"value": 0,
+				"max": 4
+			},
+			"minecraft:player.level": {
+				"value": 0,
+				"max": 24791
+			},
+			"minecraft:player.experience": {
+				"value": 0,
+				"max": 1
+			},
+			"minecraft:breathable": {
+				"total_supply": 15,
+				"suffocate_time": -1,
+				"inhale_time": 3.75,
+				"generates_bubbles": false
+			},
+			"minecraft:nameable": {
+				"always_show": true,
+				"allow_name_tag_renaming": false
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:insomnia": {
+				"days_until_insomnia": 3
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [
+					"parrot_tame"
+				],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [
+							0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-0.4,
+							-0.2,
+							-0.1
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:scaffolding_climber": {},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"value": "bad_omen"
+								},
+								{
+									"test": "is_in_village",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"event": "minecraft:trigger_raid"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"subject": "self",
+									"test": "has_equipment",
+									"domain": "torso",
+									"value": "lvi:chitin_chestplate"
+								}
+							]
+						},
+						"event": "lvi:chitin"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"subject": "self",
+									"test": "has_equipment",
+									"domain": "feet",
+									"value": "sc:praetor_boots"
+								},
+								{
+									"subject": "self",
+									"test": "is_sneaking"
+								},
+								{
+									"test": "has_tag",
+									"value": "dashed",
+									"operator": "not"
+								},
+								{
+									"subject": "self",
+									"test": "on_ground",
+									"value": false
+								}
+							]
+						},
+						"event": "dash"
+					},
+					{
+						"filters": [
+							{
+								"all_of": [
+									{
+										"test": "on_ground",
+										"subject": "self"
+									}
+								]
+							}
+						],
+						"event": "remove_dash"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "has_equipment",
+								"domain": "feet",
+								"value": "sc:praetor_boots"
+							}
+						],
+						"event": "add_praetor_fall"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "has_equipment",
+								"domain": "feet",
+								"value": "sc:praetor_boots",
+								"operator": "not"
+							}
+						],
+						"event": "remove_praetor_fall"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:ledge",
+								"operator": "=="
+							},
+							{
+								"test": "on_ground",
+								"value": false
+							},
+							{
+								"subject": "self",
+								"test": "has_tag",
+								"value": "climber",
+								"operator": "!="
+							}
+						],
+						"event": "climb"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:ledge",
+								"operator": "!="
+							},
+							{
+								"test": "has_mob_effect",
+								"value": "levitation"
+							},
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:swingbar",
+								"operator": "!="
+							},
+							{
+								"test": "has_tag",
+								"subject": "self",
+								"value": "climber"
+							},
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:jump_pad",
+								"operator": "!="
+							}
+						],
+						"event": "end_climb"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:ledge",
+								"operator": "!="
+							},
+							{
+								"test": "on_ground",
+								"value": true,
+								"subject": "self"
+							},
+							{
+								"test": "has_tag",
+								"value": "climber",
+								"subject": "self"
+							}
+						],
+						"event": "finish_climb"
+					},
+					{
+						"filters": [
+							{
+								"test": "in_block",
+								"subject": "self",
+								"value": "sc:swingbar"
+							}
+						],
+						"event": "swing"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "has_equipment",
+								"domain": "hand",
+								"value": "sc:slayer_blade"
+							}
+						],
+						"event": "slayer_strength"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:jump_pad"
+							}
+						],
+						"event": "jump"
+					},
+					{
+						"filters": [
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:jump_pad",
+								"operator": "!="
+							},
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:swingbar",
+								"operator": "!="
+							},
+							{
+								"subject": "self",
+								"test": "in_block",
+								"value": "sc:ledge",
+								"operator": "!="
+							}
+						],
+						"event": "jump_end"
+					},
+					{
+						"filters": [
+							{
+								"test": "has_equipment",
+								"value": "sc:praetor_leggings",
+								"domain": "leg",
+								"subject": "self"
+							}
+						],
+						"event": "speed"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"subject": "self",
+									"test": "has_equipment",
+									"domain": "feet",
+									"value": "sc:praetor_boots"
+								},
+								{
+									"subject": "self",
+									"test": "is_sneaking"
+								},
+								{
+									"test": "has_tag",
+									"value": "dashed2",
+									"operator": "not"
+								},
+								{
+									"subject": "self",
+									"test": "on_ground",
+									"value": false
+								},
+								{
+									"test": "has_tag",
+									"value": "dash2ready",
+									"operator": "=="
+								}
+							]
+						},
+						"event": "dash2"
+					},
+					{
+						"filters": [
+							{
+								"test": "has_equipment",
+								"value": "sc:praetor_leggings",
+								"domain": "leg",
+								"subject": "self",
+								"operator": "!="
+							}
+						],
+						"event": "normal_speed"
+					}
+				]
+			},
+			"minecraft:attack": {
+				"damage": 2
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"dash2": {
+				"run_command": {
+					"command": [
+						"summon sc:dash ^ ^0.5 ^-0.5",
+						"tag @s add dashed2",
+						"effect @s slow_falling 1 1 true",
+						"effect @s speed 1 3 true"
+					]
+				}
+			},
+			"remove_dash": {
+				"run_command": {
+					"command": [
+						"tag @s remove dashed",
+						"tag @s remove dashed2",
+						"tag @s remove dash2ready"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dash2"
+					]
+				}
+			},
+			"add_praetor_fall": {
+				"add": {
+					"component_groups": [
+						"praetor_fall"
+					]
+				}
+			},
+			"remove_praetor_fall": {
+				"remove": {
+					"component_groups": [
+						"praetor_fall"
+					]
+				}
+			},
+			"end_climb": {
+				"remove": {
+					"component_groups": [
+						"swing"
+					]
+				},
+				"trigger": {
+					"event": "remove_lev"
+				}
+			},
+			"end_dash2": {
+				"run_command": {
+					"command": [
+						"effect @s slow_falling 0 0 true"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dash2"
+					]
+				}
+			},
+			"climb": {
+				"run_command": {
+					"command": [
+						"effect @s levitation 1 8 true",
+						"tag @s add climber"
+					]
+				}
+			},
+			"finish_climb": {
+				"run_command": {
+					"command": [
+						"tag @s remove climber"
+					]
+				}
+			},
+			"jump_end": {
+				"trigger": {
+					"event": "remove_lev"
+				}
+			},
+			"slayer_strength": {
+				"run_command": {
+					"command": [
+						"effect @s strength 10 1 true"
+					]
+				}
+			},
+			"swing": {
+				"run_command": {
+					"command": [
+						"effect @s levitation 1 16 true"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"swing"
+					]
+				}
+			},
+			"jump": {
+				"run_command": {
+					"command": [
+						"effect @s levitation 1 30 true"
+					]
+				}
+			},
+			"remove_lev": {
+				"run_command": {
+					"command": [
+						"effect @s levitation 0 0 true"
+					]
+				}
+			},
+			"speed": {
+				"add": {
+					"component_groups": [
+						"speed"
+					]
+				}
+			},
+			"dash": {
+				"run_command": {
+					"command": [
+						"summon sc:dash ^ ^0.5 ^-0.5",
+						"tag @s add dashed",
+						"effect @s slow_falling 1 1 true",
+						"effect @s speed 1 3 true"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dash"
+					]
+				}
+			},
+			"end_dash1": {
+				"run_command": {
+					"command": [
+						"effect @s slow_falling 0 0 true",
+						"tag @s add dash2ready"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"dash"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"dash2"
+					]
+				}
+			},
+			"normal_speed": {
+				"add": {
+					"component_groups": [
+						"no_speed"
+					]
+				}
+			}
+		}
+	}
+}

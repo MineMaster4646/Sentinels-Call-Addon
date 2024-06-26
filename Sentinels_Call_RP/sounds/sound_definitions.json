@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.60",
+	"sound_definitions": {
+		"bfg_division": {
+			"sounds": [
+				{
+					"name": "sounds/bfg_division",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		}
+	}
+}

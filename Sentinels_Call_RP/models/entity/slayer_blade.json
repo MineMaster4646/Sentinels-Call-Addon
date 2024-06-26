@@ -1,0 +1,264 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.slayer_blade",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "pole",
+					"pivot": [
+						0,
+						25,
+						0
+					],
+					"rotation": [
+						0,
+						45,
+						0
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "slayer_blade",
+					"parent": "pole",
+					"pivot": [
+						0,
+						14,
+						-2
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								10.25,
+								-1.75
+							],
+							"size": [
+								1,
+								2,
+								4
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								10,
+								-11
+							],
+							"size": [
+								1,
+								2,
+								11
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "slicer",
+					"parent": "slayer_blade",
+					"pivot": [
+						0,
+						11,
+						-3.75
+					],
+					"rotation": [
+						12.5,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								10,
+								-4.25
+							],
+							"size": [
+								1,
+								2,
+								1
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "slicer2",
+					"parent": "slayer_blade",
+					"pivot": [
+						0,
+						11,
+						-6
+					],
+					"rotation": [
+						12.5,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								10,
+								-6.5
+							],
+							"size": [
+								1,
+								2,
+								1
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "slicer3",
+					"parent": "slayer_blade",
+					"pivot": [
+						0,
+						11,
+						-8.25
+					],
+					"rotation": [
+						12.5,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								10,
+								-8.75
+							],
+							"size": [
+								1,
+								2,
+								1
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "stabby",
+					"parent": "slayer_blade",
+					"pivot": [
+						0,
+						11,
+						-11.75
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								10,
+								-12.75
+							],
+							"size": [
+								1,
+								2,
+								2
+							],
+							"inflate": 0.2,
+							"uv": [
+								0,
+								6
+							]
+						},
+						{
+							"origin": [
+								-0.5,
+								11,
+								-15.1
+							],
+							"size": [
+								1,
+								1,
+								2
+							],
+							"inflate": 0.19,
+							"uv": [
+								4,
+								8
+							]
+						}
+					]
+				},
+				{
+					"name": "slicey",
+					"parent": "stabby",
+					"pivot": [
+						0,
+						9.8,
+						-12.95
+					],
+					"rotation": [
+						-22.5,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								9.9,
+								-15.35
+							],
+							"size": [
+								1,
+								1,
+								2.4
+							],
+							"inflate": 0.1,
+							"uv": [
+								0,
+								13
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

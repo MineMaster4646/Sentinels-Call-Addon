@@ -1,0 +1,33 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "sc:slayer_blade",
+			"materials": {
+				"default": "entity_alphatest",
+				"enchanted": "entity_alphatest_glint",
+				"glow": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/attachables/slayer_blade",
+				"enchanted": "textures/misc/enchanted_item_glint_fire"
+			},
+			"geometry": {
+				"default": "geometry.slayer_blade"
+			},
+			"animations": {
+				"wield_first_person": "none",
+				"wield_third_person": "animation.sword.wield_third_person",
+				"wield": "controller.animation.sword.wield"
+			},
+			"scripts": {
+				"animate": [
+					"wield"
+				]
+			},
+			"render_controllers": [
+				"controller.render.slayer_blade"
+			]
+		}
+	}
+}

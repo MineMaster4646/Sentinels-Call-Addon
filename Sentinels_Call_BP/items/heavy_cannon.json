@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sc:heavy_cannon",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "sc_heavy_cannon"
+			},
+			"tag:gun": {},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "shoot"
+				}
+			},
+			"minecraft:cooldown": {
+				"category": "heavy_cannon_shoot",
+				"duration": 0.02
+			},
+			"tag:scope": {},
+			"minecraft:max_stack_size": 1
+		},
+		"events": {
+			"shoot": {
+				"sequence": [
+					{
+						"shoot": {
+							"projectile": "sc:machine_bullet",
+							"launch_power": 2
+						},
+						"condition": "!query.is_sneaking"
+					},
+					{
+						"run_command": {
+							"command": [
+								"playsound firework.blast @a ~ ~ ~ 0.75 0.45 0.75",
+								"playsound random.explode @a ~ ~ ~ 0.5 2 0.5"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

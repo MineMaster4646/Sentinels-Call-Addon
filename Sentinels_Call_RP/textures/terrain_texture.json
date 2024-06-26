@@ -1,0 +1,43 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"netherrack_top": {
+			"textures": "textures/blocks/netherrack_top"
+		},
+		"nether_gold_ore_top": {
+			"textures": "textures/blocks/nether_gold_ore_top"
+		},
+		"quartz_ore_top": {
+			"textures": "textures/blocks/quartz_ore_top"
+		},
+		"netherrack": {
+			"textures": {
+				"variations": [
+					{
+						"path": "textures/blocks/netherrack",
+						"weight": 1
+					},
+					{
+						"path": "textures/blocks/netherrack1",
+						"weight": 1
+					}
+				]
+			}
+		},
+		"sc_ledge_inv": {
+			"textures": "textures/blocks/ledge_invis"
+		},
+		"sc_swingbar": {
+			"textures": "textures/blocks/swingbar"
+		},
+		"sc_ledge": {
+			"textures": "textures/blocks/ledge"
+		},
+		"sc_jump_pad": {
+			"textures": "textures/blocks/jump_pad"
+		}
+	}
+}

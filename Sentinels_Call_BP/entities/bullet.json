@@ -1,0 +1,113 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:bullet",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"destroy": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 5
+					},
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "destroy_event",
+							"filters": [
+								{
+									"test": "has_component",
+									"value": "minecraft:projectile",
+									"operator": "!=",
+									"subject": "other"
+								}
+							]
+						}
+					}
+				},
+				"power": 1.5,
+				"uncertainty_base": 5,
+				"offset": [
+					5,
+					0,
+					10
+				],
+				"anchor": 1,
+				"should_bounce": false,
+				"destroy_on_hurt": true,
+				"gravity": 0
+			},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:health": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": [
+							{
+								"test": "on_ground",
+								"subject": "self"
+							}
+						],
+						"event": "destroy_event"
+					},
+					{
+						"filters": [
+							{
+								"test": "actor_health",
+								"operator": ">",
+								"value": 0
+							}
+						],
+						"event": "particles"
+					}
+				]
+			},
+			"minecraft:breathable": {
+				"breathes_solids": true
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"destroy_event": {
+				"add": {
+					"component_groups": [
+						"destroy"
+					]
+				}
+			},
+			"particles": {
+				"run_command": {
+					"command": [
+						"particle minecraft:basic_crit_particle ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

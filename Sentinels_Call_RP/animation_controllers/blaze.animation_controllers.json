@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.blaze.flame": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flaming": "false"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.blaze.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"move",
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

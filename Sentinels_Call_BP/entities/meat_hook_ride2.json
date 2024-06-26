@@ -1,0 +1,118 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sc:meat_hook_ride2",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"instant_destroy": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:physics": {},
+			"minecraft:type_family": {
+				"family": [
+					"seat"
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "rider_count",
+									"operator": "==",
+									"value": 0,
+									"subject": "self"
+								},
+								{
+									"test": "has_tag",
+									"subject": "self",
+									"value": "ridden",
+									"operator": "=="
+								}
+							]
+						},
+						"event": "destroy_event"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "rider_count",
+									"operator": "==",
+									"value": 0,
+									"subject": "self"
+								}
+							]
+						},
+						"event": "ride_event"
+					},
+					{
+						"filters": [
+							{
+								"test": "rider_count",
+								"subject": "self",
+								"value": 1
+							}
+						],
+						"event": "tag_event"
+					}
+				]
+			},
+			"minecraft:rideable": {
+				"family_types": [
+					"player"
+				],
+				"seat_count": 1,
+				"rider_can_interact": true,
+				"seats": [
+					{
+						"position": [
+							0,
+							0,
+							0
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"destroy_event": {
+				"add": {
+					"component_groups": [
+						"instant_destroy"
+					]
+				},
+				"run_command": {
+					"command": [
+						"event entity @e[c=1,type=sc:meat_hook,r=2] add_despawn"
+					]
+				}
+			},
+			"ride_event": {
+				"run_command": {
+					"command": [
+						"ride @p start_riding @s teleport_rider"
+					]
+				}
+			},
+			"tag_event": {
+				"run_command": {
+					"command": [
+						"tag @s add ridden"
+					]
+				}
+			}
+		}
+	}
+}

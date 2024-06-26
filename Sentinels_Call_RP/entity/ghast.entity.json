@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minecraft:ghast",
+			"materials": {
+				"default": "ghast"
+			},
+			"textures": {
+				"default": "textures/entity/ghast/ghast",
+				"shooting": "textures/entity/ghast/ghast_shooting"
+			},
+			"geometry": {
+				"default": "geometry.ghast"
+			},
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 19
+			},
+			"animations": {
+				"move": "animation.ghast.move",
+				"scale": "animation.ghast.scale",
+				"shoot": "animation.ghast.shoot",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.ghast.move"
+				},
+				{
+					"scale": "controller.animation.ghast.scale"
+				},
+				{
+					"shoot": "controller.animation.ghast.shoot"
+				}
+			],
+			"render_controllers": [
+				"controller.render.ghast"
+			]
+		}
+	}
+}

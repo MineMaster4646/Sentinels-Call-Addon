@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "sc:praetor_chestplate",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/attachables/praetor_armor",
+				"enchanted": "textures/misc/enchanted_item_glint_fire"
+			},
+			"geometry": {
+				"default": "geometry.armor.chestplate"
+			},
+			"scripts": {},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}
