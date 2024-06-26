@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:meat_hook_ride2",
@@ -93,21 +93,21 @@
 						"instant_destroy"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"event entity @e[c=1,type=sc:meat_hook,r=2] add_despawn"
 					]
 				}
 			},
 			"ride_event": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"ride @p start_riding @s teleport_rider"
 					]
 				}
 			},
 			"tag_event": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tag @s add ridden"
 					]

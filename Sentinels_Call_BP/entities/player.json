@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minecraft:player",
@@ -185,7 +185,7 @@
 				]
 			},
 			"minecraft:conditional_bandwidth_optimization": {},
-			"minecraft:scaffolding_climber": {},
+			"minecraft:block_climber": {},
 			"minecraft:environment_sensor": {
 				"triggers": [
 					{
@@ -511,7 +511,7 @@
 				}
 			},
 			"dash2": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"summon sc:dash ^ ^0.5 ^-0.5",
 						"tag @s add dashed2",
@@ -521,7 +521,7 @@
 				}
 			},
 			"remove_dash": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tag @s remove dashed",
 						"tag @s remove dashed2",
@@ -559,7 +559,7 @@
 				}
 			},
 			"end_dash2": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s slow_falling 0 0 true"
 					]
@@ -571,7 +571,7 @@
 				}
 			},
 			"climb": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s levitation 1 8 true",
 						"tag @s add climber"
@@ -579,7 +579,7 @@
 				}
 			},
 			"finish_climb": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tag @s remove climber"
 					]
@@ -591,14 +591,14 @@
 				}
 			},
 			"slayer_strength": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s strength 10 1 true"
 					]
 				}
 			},
 			"swing": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s levitation 1 16 true"
 					]
@@ -610,14 +610,14 @@
 				}
 			},
 			"jump": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s levitation 1 30 true"
 					]
 				}
 			},
 			"remove_lev": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s levitation 0 0 true"
 					]
@@ -631,7 +631,7 @@
 				}
 			},
 			"dash": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"summon sc:dash ^ ^0.5 ^-0.5",
 						"tag @s add dashed",
@@ -646,7 +646,7 @@
 				}
 			},
 			"end_dash1": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @s slow_falling 0 0 true",
 						"tag @s add dash2ready"

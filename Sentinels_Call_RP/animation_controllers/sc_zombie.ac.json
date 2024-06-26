@@ -8,7 +8,7 @@
                     "animations": ["animation.sc_zombie.idle"],
                     "transitions": [
                         {
-                            "moving: "q.is_moving"
+                            "moving": "q.is_moving"
                         }
                     ]
                 },
@@ -16,11 +16,11 @@
                     "animations": ["animation.sc_zombie.walk"],
                     "transitions": [
                         {
-                            "idle: "!q.is_moving"
+                            "idle": "!q.is_moving"
                         }
                     ]
                 }
             }
         }
     }
-}   
+}

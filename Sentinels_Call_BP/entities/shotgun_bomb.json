@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:shotgun_bomb",
@@ -51,16 +51,17 @@
 						"exploder"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
-						"execute @e[c=1,type=!sc:shotgun_bomb,type=!sc:dash,r=2] ~ ~ ~ tp @e[type=sc:shotgun_bomb,c=1] ~ ~1 ~"
+						"execute as @e[c=1,type=!sc:shotgun_bomb,type=!sc:dash,r=2] at @s run tp @e[type=sc:shotgun_bomb,c=1] ~ ~1 ~"
+
 					]
 				}
 			},
 			"stick": {
-				"run_command": {
+				"queue_command": {
 					"command": [
-						"execute @s ~ ~ ~ execute @e[c=1,type=!sc:shotgun_bomb,r=3,type=!sc:dash] ~ ~ ~ tp @e[type=sc:shotgun_bomb,c=1] ~ ~1 ~"
+						"execute as @s at @s run execute as @e[c=1,type=!sc:shotgun_bomb,r=3,type=!sc:dash] at @s run tp @e[type=sc:shotgun_bomb,c=1] ~ ~1 ~"
 					]
 				}
 			}

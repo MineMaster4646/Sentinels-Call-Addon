@@ -7,8 +7,16 @@
 		"netherrack_top": {
 			"textures": "textures/blocks/netherrack_top"
 		},
+		"nether_gold_ore": {
+      		"side": "textures/blocks/nether_gold_ore",
+      		"down": "textures/blocks/nether_gold_ore"
+    	},
 		"nether_gold_ore_top": {
 			"textures": "textures/blocks/nether_gold_ore_top"
+		},
+		"quartz_ore": {
+	  		"side": "textures/blocks/quartz_ore",
+	  		"down": "textures/blocks/quartz_ore"
 		},
 		"quartz_ore_top": {
 			"textures": "textures/blocks/quartz_ore_top"

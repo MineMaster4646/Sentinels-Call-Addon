@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:machine_bullet",
@@ -99,7 +99,7 @@
 				}
 			},
 			"minecraft:physics": {},
-			"minecraft:fire_immune": true
+			"minecraft:fire_immune": {}
 		},
 		"events": {
 			"destroy_event": {
@@ -110,7 +110,7 @@
 				}
 			},
 			"particles": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"particle minecraft:basic_crit_particle ~ ~ ~"
 					]

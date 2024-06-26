@@ -1,14 +1,14 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "sc:bfg",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"texture": "sc_bfg"
-			},
+			"minecraft:icon": "sc_bfg",
 			"tag:gun": {},
 			"minecraft:on_use": {
 				"on_use": {

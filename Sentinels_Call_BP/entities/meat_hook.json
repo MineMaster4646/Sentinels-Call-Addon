@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:meat_hook",
@@ -33,10 +33,10 @@
 			"minecraft:projectile": {
 				"power": 2,
 				"gravity": 0.07,
-				"uncertaintyBase": 0,
-				"uncertaintyMultiplier": 0,
+				"uncertainty_base": 0,
+				"uncertainty_multiplier": 0,
 				"anchor": 1,
-				"shouldbounce": true,
+				"should_bounce": true,
 				"offset": [
 					0,
 					0.1,
@@ -101,7 +101,7 @@
 			"unride": {
 				"sequence": [
 					{
-						"run_command": {
+						"queue_command": {
 							"command": [
 								"ride @p[r=1.5] stop_riding"
 							]
@@ -122,16 +122,16 @@
 				}
 			},
 			"start_despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [
-						"execute @p ~ ~ ~ event entity @e[c=1,type=sc:meat_hook,r=4] add_despawn"
+						"execute as @p run event entity @e[c=1,type=sc:meat_hook,r=4] add_despawn"
 					]
 				}
 			},
 			"stop_hook": {
-				"run_command": {
+				"queue_command": {
 					"command": [
-						"execute @s ~ ~ ~ tp @s ~ ~ ~",
+						"execute if entity @e[type=sc:meat_hook,r=4] run event entity @e[c=1,type=sc:meat_hook,r=4] add_despawn",
 						"playsound random.anvil_land @a ~ ~ ~ 1 0.75 1"
 					]
 				}

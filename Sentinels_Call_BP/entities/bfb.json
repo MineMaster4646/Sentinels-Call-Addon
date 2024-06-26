@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:bfb",
@@ -111,7 +111,7 @@
 				}
 			},
 			"particles": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"particle sc:bfg_particle ~ ~ ~",
 						"damage @e[r=10,type=!player] 20 entity_attack",

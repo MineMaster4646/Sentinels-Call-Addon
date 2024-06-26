@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:marauder",
@@ -84,7 +84,7 @@
 						"shielded"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tag @s add shielded"
 					]
@@ -96,7 +96,7 @@
 						"shielded"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tag @s remove shielded"
 					]

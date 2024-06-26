@@ -10,7 +10,7 @@
 				"default": "textures/entity/meat_hook_ride2"
 			},
 			"geometry": {
-				"default": "geometry.meat_hook_ride2"
+				"default": "geometry.meat_hook_ride"
 			},
 			"render_controllers": [
 				"controller.render.meat_hook_ride2"

@@ -1,9 +1,11 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "sc:praetor_boots",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -18,10 +20,10 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": {
-				"texture": "sc_praetor_boots"
+			"minecraft:icon": "sc_praetor_boots",
+			"minecraft:render_offsets": {
+				"value": "boots"
 			},
-			"minecraft:render_offsets": "boots",
 			"minecraft:armor": {
 				"protection": 2
 			},
@@ -34,16 +36,12 @@
 			"minecraft:repairable": {
 				"repair_items": [
 					{
-						"items": [
-							"minecraft:iron_ingot"
-						],
+						"items": ["minecraft:iron_ingot"],
 						"repair_amount": "query.max_durability*0.25"
 					},
 					{
-						"items": [
-							"sc:praetor_boots"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"items": ["sc:praetor_boots"],
+						"repair_amount": "query.remaining_durability+0.12*query.max_durability"
 					}
 				]
 			}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:bullet2",
@@ -102,7 +102,7 @@
 				}
 			},
 			"particles": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"particle minecraft:basic_crit_particle ~ ~ ~"
 					]

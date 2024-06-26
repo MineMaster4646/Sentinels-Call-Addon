@@ -1,9 +1,12 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:swingbar",
 			"is_experimental": false,
+			"minecraft:menu_category": {
+				"category": "construction"
+			},
 			"properties": {
 				"sc:rot": [
 					2,
@@ -49,14 +52,11 @@
 				"event": "rotate"
 			},
 			"minecraft:block_light_emission": 0.1,
-			"minecraft:block_light_absorption": 0,
-			"minecraft:creative_category": {
-				"category": "construction"
-			}
+			"minecraft:block_light_absorption": 0
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('sc:rot') == 4",
+				"condition": "query.block_state('sc:rot') == 4",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -66,7 +66,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:rot') == 5",
+				"condition": "query.block_state('sc:rot') == 5",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -76,7 +76,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:rot') == 2",
+				"condition": "query.block_state('sc:rot') == 2",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -86,7 +86,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:rot') == 3",
+				"condition": "query.block_state('sc:rot') == 3",
 				"components": {
 					"minecraft:rotation": [
 						0,

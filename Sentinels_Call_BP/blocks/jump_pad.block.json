@@ -1,9 +1,11 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.21.0",
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:jump_pad",
-			"is_experimental": false
+			"menu_category": {
+				"category": "construction"
+			}
 		},
 		"components": {
 			"minecraft:geometry": "geometry.jump_pad",
@@ -37,10 +39,7 @@
 					14
 				]
 			},
-			"minecraft:block_light_emission": 0.8,
-			"minecraft:creative_category": {
-				"category": "construction"
-			}
+			"minecraft:block_light_emission": 0.8
 		}
 	}
 }

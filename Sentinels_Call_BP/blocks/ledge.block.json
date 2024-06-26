@@ -4,6 +4,9 @@
 		"description": {
 			"identifier": "sc:ledge",
 			"is_experimental": false,
+			"minecraft:menu_category": {
+				"category": "construction"
+			},
 			"properties": {
 				"sc:rot": [
 					2,
@@ -49,7 +52,7 @@
 			"minecraft:block_light_emission": 0.1,
 			"minecraft:block_light_absorption": 0,
 			"minecraft:on_interact": {
-				"condition": "query.get_equipped_item_name=='diamond'",
+				"condition": "query.is_item_name_any=='diamond'",
 				"event": "invis"
 			},
 			"minecraft:material_instances": {
@@ -59,14 +62,11 @@
 					"face_dimming": false,
 					"ambient_occlusion": false
 				}
-			},
-			"minecraft:creative_category": {
-				"category": "construction"
 			}
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('sc:rot') == 2",
+				"condition": "query.block_state('sc:rot') == 2",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -76,7 +76,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:rot') == 3",
+				"condition": "query.block_state('sc:rot') == 3",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -86,7 +86,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:rot') == 4",
+				"condition": "query.block_state('sc:rot') == 4",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -96,7 +96,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:rot') == 5",
+				"condition": "query.block_state('sc:rot') == 5",
 				"components": {
 					"minecraft:rotation": [
 						0,
@@ -106,7 +106,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:inv') == 0",
+				"condition": "query.block_state('sc:inv') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -119,7 +119,7 @@
 				}
 			},
 			{
-				"condition": "query.block_property('sc:inv') == 1",
+				"condition": "query.block_state('sc:inv') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -141,13 +141,13 @@
 			"invis": {
 				"sequence": [
 					{
-						"condition": "query.block_property('sc:inv')==0",
+						"condition": "query.block_state('sc:inv')==0",
 						"set_block_property": {
 							"sc:inv": 1
 						}
 					},
 					{
-						"condition": "query.block_property('sc:inv')==1",
+						"condition": "query.block_state('sc:inv')==1",
 						"set_block_property": {
 							"sc:inv": 0
 						}

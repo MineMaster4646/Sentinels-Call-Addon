@@ -3,7 +3,9 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "sc:praetor_leggings",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -18,10 +20,10 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": {
-				"texture": "sc_praetor_leggings"
+			"minecraft:icon": "sc_praetor_leggings",
+			"minecraft:render_offsets": {
+				"value": "leggings"
 			},
-			"minecraft:render_offsets": "leggings",
 			"minecraft:armor": {
 				"protection": 5
 			},
@@ -43,7 +45,7 @@
 						"items": [
 							"sc:praetor_leggings"
 						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"repair_amount": "query.remaining_durability+0.12*query.max_durability"
 					}
 				]
 			}
