@@ -1,22 +1,20 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "sc:crucible",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
 			"minecraft:can_destroy_in_creative": false,
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.sword"
-			},
 			"minecraft:damage": 13,
 			"minecraft:hand_equipped": true,
 			"minecraft:icon": {
 				"texture": "sc_crucible"
 			},
 			"minecraft:max_stack_size": 1,
-			"minecraft:weapon": {},
 			"tag:minecraft:is_sword": {}
 		},
 		"events": {}

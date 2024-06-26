@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "sc:super_shotgun",
@@ -10,70 +10,7 @@
 				"texture": "sc_super_shotgun"
 			},
 			"tag:gun": {},
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "shoot"
-				}
-			},
-			"minecraft:cooldown": {
-				"category": "super_shotgun_shoot",
-				"duration": 2
-			},
 			"minecraft:max_stack_size": 1
-		},
-		"events": {
-			"shoot": {
-				"sequence": [
-					{
-						"shoot": {
-							"projectile": "sc:bullet",
-							"launch_power": 2
-						},
-						"condition": "!query.is_sneaking",
-						"run_command": {
-							"command": [
-								"playsound firework.blast @a ~ ~ ~ 1 0.25 1",
-								"playsound random.explode @a ~ ~ ~ 0.75 1.5 0.75"
-							]
-						}
-					},
-					{
-						"shoot": {
-							"projectile": "sc:bullet",
-							"launch_power": 2
-						},
-						"condition": "!query.is_sneaking"
-					},
-					{
-						"shoot": {
-							"projectile": "sc:bullet",
-							"launch_power": 2
-						},
-						"condition": "!query.is_sneaking"
-					},
-					{
-						"shoot": {
-							"projectile": "sc:bullet",
-							"launch_power": 2
-						},
-						"condition": "!query.is_sneaking"
-					},
-					{
-						"shoot": {
-							"projectile": "sc:bullet",
-							"launch_power": 2
-						},
-						"condition": "!query.is_sneaking"
-					},
-					{
-						"shoot": {
-							"projectile": "sc:meat_hook",
-							"launch_power": 2
-						},
-						"condition": "query.is_sneaking"
-					}
-				]
-			}
 		}
 	}
 }

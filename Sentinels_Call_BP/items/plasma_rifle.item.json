@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.0",
+    "format_version": "1.20.80",
     "minecraft:item": {
         "description": {
             "identifier": "sc:plasma_rifle",
@@ -12,7 +12,9 @@
                 "max_durability": 200
             },
             "minecraft:hand_equipped": true,
-            "minecraft:icon": "plasma_rifle",
+            "minecraft:icon": {
+                "texture": "plasma_rifle"
+            },
             "minecraft:max_stack_size": 1
         }
     }

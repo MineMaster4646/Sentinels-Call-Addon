@@ -1,10 +1,11 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "sc:praetor_leggings",
 			"menu_category": {
-				"category": "equipment"
+				"category": "equipment",
+				"group": "itemGroup.name.leggings"
 			}
 		},
 		"components": {
@@ -20,18 +21,11 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": "sc_praetor_leggings",
-			"minecraft:render_offsets": {
-				"value": "leggings"
-			},
-			"minecraft:armor": {
-				"protection": 5
+			"minecraft:icon": {
+				"texture": "sc_praetor_leggings"
 			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.leggings"
 			},
 			"minecraft:repairable": {
 				"repair_items": [
