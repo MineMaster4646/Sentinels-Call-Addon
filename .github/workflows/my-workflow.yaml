@@ -16,9 +16,9 @@ jobs:
       - name: Sync BPP to MCBE
         run: |
           # Replace with your actual commands to sync BP
-          cp -r "C:\\Users\\PC-Lenovo\\Documents\\GitHub\\Sentinels-Call-Addon\\Sentinels_Call_BP*" "C:\\Users\\PC-Lenovo\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Sentinels_Call_BP"
+          cp -r "C:\\Users\\PC-Lenovo\\Documents\\GitHub\\Sentinels-Call-Addon\\Sentinels_Call_BP" "C:\\Users\\PC-Lenovo\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Sentinels_Call_BP"
 
       - name: Sync RP to MCBE
         run: |
           # Replace with your actual commands to sync RP
-          cp -r "C:\\Users\\PC-Lenovo\\Documents\\GitHub\\Sentinels-Call-Addon\\Sentinels_Call_RP*" "C:\\Users\\PC-Lenovo\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Sentinels_Call_RP"
+          cp -r "C:\\Users\\PC-Lenovo\\Documents\\GitHub\\Sentinels-Call-Addon\\Sentinels_Call_RP" "C:\\Users\\PC-Lenovo\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Sentinels_Call_RP"
