@@ -105,7 +105,7 @@
 			"bones": {
 				"rightitem": {
 					"position": [
-						"query.get_equipped_item_name('off_hand')=='shield'?-4:0",
+						"query.is_item_name_any('off_hand')=='shield'?-4:0",
 						0,
 						0
 					]
@@ -268,7 +268,7 @@
 				"leftarm": {
 					"position": [
 						0,
-						"(query.get_equipped_item_name('off_hand')=='map'||query.get_equipped_item_name('off_hand')=='shield')?0:-10*(1-context.player_offhand_arm_height)",
+						"(query.is_item_name_any('off_hand')=='map'||query.is_item_name_any('off_hand')=='shield')?0:-10*(1-context.player_offhand_arm_height)",
 						0
 					]
 				},
@@ -294,7 +294,7 @@
 				"rightarm": {
 					"position": [
 						0,
-						"query.get_equipped_item_name('off_hand')!='shield'?-10*(1-variable.player_arm_height):0",
+						"query.is_item_name_any('off_hand')!='shield'?-10*(1-variable.player_arm_height):0",
 						0
 					]
 				}

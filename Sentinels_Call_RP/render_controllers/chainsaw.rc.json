@@ -1,7 +1,7 @@
 {
     "format_version": "1.21.0",
     "render_controllers": {
-      "controller.render.sc_zombie": {
+      "controller.render.chainsaw": {
           "geometry": "geometry.default",
           "materials": [
               {
