@@ -3,3 +3,4 @@ diagnostic.disable.resourcepack.model.bone.missing=true
 diagnostic.disable.minecraft.animation_controller.animation.undefined=true
 diagnostic.disable.molang.variable.missing=true
 diagnostic.disable.debugger.internal.exception=true
+diagnostic.disable.minecraft.animation.unused=true
