@@ -12,7 +12,14 @@
       "type": "data",
       "uuid": "676a73ab-6be7-44c7-ba1f-2c98ffc1dfe6",
       "version": [1, 0, 0]
-    }
+    },
+    {
+      "uuid": "239c134f-67bf-4738-9bcc-8c69d31b1f72",
+      "version": [1, 0, 0],
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/Main.js"
+    }    
   ],
   "capabilities": [
     "script_eval"

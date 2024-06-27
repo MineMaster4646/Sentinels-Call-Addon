@@ -1,8 +1,8 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "sc:chain_bullet",
+			"identifier": "sc:bullet",
 			"is_spawnable": true,
 			"is_summonable": true,
 			"is_experimental": false
@@ -16,7 +16,7 @@
 			"minecraft:projectile": {
 				"on_hit": {
 					"impact_damage": {
-						"damage": 3
+						"damage": 5
 					},
 					"stick_in_ground": {
 						"shake_time": 0
@@ -24,19 +24,29 @@
 					"definition_event": {
 						"affect_projectile": true,
 						"event_trigger": {
-							"event": "destroy_event"
+							"event": "destroy_event",
+							"filters": [
+								{
+									"test": "has_component",
+									"value": "minecraft:projectile",
+									"operator": "!=",
+									"subject": "other"
+								}
+							]
 						}
 					}
 				},
 				"power": 1.5,
-				"uncertainty_base": 1,
+				"uncertainty_base": 5,
 				"offset": [
-					1,
-					1,
-					0
+					5,
+					0,
+					10
 				],
 				"anchor": 1,
-				"gravity": 0.001
+				"should_bounce": false,
+				"destroy_on_hurt": true,
+				"gravity": 0
 			},
 			"minecraft:type_family": {
 				"family": [
@@ -52,16 +62,6 @@
 			},
 			"minecraft:damage_sensor": {
 				"triggers": {
-					"on_damage": {
-						"filters": [
-							{
-								"subject": "other",
-								"test": "is_family",
-								"value": "bullet",
-								"operator": "=="
-							}
-						]
-					},
 					"deals_damage": false
 				}
 			},
@@ -90,12 +90,6 @@
 			},
 			"minecraft:breathable": {
 				"breathes_solids": true
-			},
-			"minecraft:despawn": {
-				"despawn_from_distance": {
-					"max_distance": 64,
-					"min_distance": 48
-				}
 			},
 			"minecraft:physics": {}
 		},

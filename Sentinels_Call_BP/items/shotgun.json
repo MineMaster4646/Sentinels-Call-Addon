@@ -8,9 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"texture": "sc_shotgun"
-			},
+			"minecraft:icon": "sc_shotgun",
 			"tag:gun": {},
 			"minecraft:max_stack_size": 1
 		}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.8.0",
+	"format_version": "1.20.80",
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "sc:praetor_chestplate",
@@ -12,7 +12,7 @@
 				"enchanted": "textures/misc/enchanted_item_glint_fire"
 			},
 			"geometry": {
-				"default": "geometry.armor.chestplate"
+				"default": "geometry.player.armor.chestplate"
 			},
 			"scripts": {},
 			"render_controllers": [

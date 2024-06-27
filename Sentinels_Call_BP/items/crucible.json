@@ -11,12 +11,9 @@
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:damage": 13,
 			"minecraft:hand_equipped": true,
-			"minecraft:icon": {
-				"texture": "sc_crucible"
-			},
+			"minecraft:icon": "sc_crucible",
 			"minecraft:max_stack_size": 1,
 			"tag:minecraft:is_sword": {}
-		},
-		"events": {}
+		}
 	}
 }

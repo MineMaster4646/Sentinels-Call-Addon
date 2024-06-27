@@ -8,9 +8,7 @@
 			}
 		},
 		"components": {
-			"minecraft:icon": {
-				"texture": "sc_heavy_cannon"
-			},
+			"minecraft:icon": "sc_heavy_cannon",
 			"tag:gun": {},
 			"tag:scope": {},
 			"minecraft:max_stack_size": 1

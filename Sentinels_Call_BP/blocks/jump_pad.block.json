@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:jump_pad",
@@ -8,38 +8,21 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.jump_pad",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "sc_jump_pad",
-					"render_method": "blend"
-				}
-			},
-			"minecraft:pick_collision": {
+			"minecraft:collision_box": {
 				"origin": [
-					-7,
+					-0.5,
 					0,
-					-7
+					-0.5
 				],
 				"size": [
-					14,
-					2,
-					14
+					1,
+					0.5,
+					1
 				]
 			},
-			"minecraft:entity_collision": {
-				"origin": [
-					-7,
-					0,
-					-7
-				],
-				"size": [
-					14,
-					2,
-					14
-				]
-			},
-			"minecraft:block_light_emission": 0.8
+			"minecraft:geometry": {
+				"identifier": "geometry.jump_pad"
+			}
 		}
 	}
 }

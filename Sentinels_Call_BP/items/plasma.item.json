@@ -8,13 +8,7 @@
             }
         },
         "components": {
-            "minecraft:display_name": {
-                "value": "Plasma"
-            },
-            "minecraft:hover_text_color": "blue",
-            "minecraft:icon": {
-                "texture": "plasma"
-            },
+            "minecraft:icon": "sc_plasma",
             "minecraft:max_stack_size": 64
         }
     }

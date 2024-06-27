@@ -21,9 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": {
-				"texture": "sc_praetor_leggings"
-			},
+			"minecraft:icon": "sc_praetor_leggings",
 			"minecraft:wearable": {
 				"slot": "slot.armor.legs"
 			},

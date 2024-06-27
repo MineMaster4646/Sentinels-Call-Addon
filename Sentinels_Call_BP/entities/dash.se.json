@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:dash",
@@ -17,7 +17,7 @@
 				"priority": 0,
 				"attack_time": 0.1,
 				"duration": 0.1,
-				"knockback_strength": 2,
+				"knockback_horizontal_strength": 2,
 				"knockback_range": 10,
 				"knockback_filters": {
 					"all_of": [

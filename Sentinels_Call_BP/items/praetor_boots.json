@@ -21,9 +21,7 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": {
-				"texture": "sc_praetor_boots"
-			},
+			"minecraft:icon": "sc_praetor_boots",
 			"minecraft:wearable": {
 				"slot": "slot.armor.feet"
 			},

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.10.0",
+	"format_version": "1.20.80",
 	"animation_controllers": {
 		"controller.animation.sword.wield": {
 			"initial_state": "first_person",
