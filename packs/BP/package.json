@@ -1,0 +1,19 @@
+{
+  "name": "sentinels_call_bp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@minecraft/server": "^1.14.0-beta.1.21.20-preview.21",
+    "@minecraft/server-admin": "^1.0.0-beta.1.21.20-preview.21",
+    "@minecraft/server-gametest": "^1.0.0-beta.1.21.20-preview.21",
+    "@minecraft/server-net": "^1.0.0-beta.1.21.20-preview.21",
+    "@minecraft/server-ui": "^1.3.0-beta.1.21.20-preview.21"
+  }
+}

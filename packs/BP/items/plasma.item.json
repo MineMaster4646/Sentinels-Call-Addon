@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.10",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sc:plasma",
+            "menu_category": {
+                "category": "equipment"
+            }
+        },
+        "components": {
+            "minecraft:icon": "sc_plasma",
+            "minecraft:max_stack_size": 64,
+            "minecraft:projectile": {
+                "minimum_critical_power": 0,
+                "projectile_entity": "sc:plasma"
+            }
+        }
+    }
+}
