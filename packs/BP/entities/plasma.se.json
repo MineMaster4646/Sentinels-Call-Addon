@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.20",
+    "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
             "identifier": "sc:plasma",
@@ -60,7 +60,7 @@
 			"minecraft:physics": {},
             "minecraft:projectile": {
                 "anchor": 1,
-                "destroy_on_hurt": false,
+                "destroy_on_hurt": true,
                 "gravity": 0,
                 "on_hit": {
                     "impact_damage": {

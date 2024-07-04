@@ -1,4 +1,5 @@
 {
+	"format_version": [1, 1, 0],
 	"netherrack": {
 		"isotropic": {
 			"up": true,
@@ -34,6 +35,10 @@
 		"sound": "stone"
 	},
 	"sc:jump_pad": {
+		"sound": "stone"
+	},
+	"sc:uac_wall1": {
+		"textures": "sc_uac_wall1",
 		"sound": "stone"
 	}
 }

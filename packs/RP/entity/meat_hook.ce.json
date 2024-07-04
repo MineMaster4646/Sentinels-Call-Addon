@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sc:meat_hook",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/meat_hook"
+			},
+			"geometry": {
+				"default": "geometry.meat_hook"
+			},
+			"render_controllers": [
+				"controller.render.meat_hook"
+			],
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"animations": {
+				"shoot": "animation.bullet.move",
+				"scale": "animation.meat_hook.inf"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"shoot": "animation.bullet.move"
+					},
+					{
+						"scale": "animation.meat_hook.inf"
+					}
+				]
+			}
+		}
+	}
+}

@@ -17,37 +17,13 @@
 				"url": "github.com/Bedrock-OSS/regolith-filters",
 				"version": "1.0.0"
 			},
-			"fix_emissive": {
-				"url": "github.com/Bedrock-OSS/regolith-filters",
-				"version": "1.0.0"
-			},
-			"gametests": {
-				"url": "github.com/Bedrock-OSS/regolith-filters",
-				"version": "1.6.1"
-			},
-			"json_cleaner": {
-				"url": "github.com/Bedrock-OSS/regolith-filters",
-				"version": "1.1.1"
-			},
-			"module_importer": {
-				"url": "github.com/ShiCheng-Lu/Regolith-Filters",
-				"version": "a4f82842b3b718f6bbc176688a5bba353e49ef47"
-			},
 			"name_ninja": {
 				"url": "github.com/Bedrock-OSS/regolith-filters",
 				"version": "1.2.3"
 			},
-			"texture_convert": {
-				"url": "github.com/Bedrock-OSS/regolith-filters",
-				"version": "1.1.1"
-			},
 			"texture_list": {
 				"url": "github.com/Bedrock-OSS/regolith-filters",
 				"version": "1.1.3"
-			},
-			"ts_transpiler": {
-				"url": "github.com/MajestikButter/Regolith-Filters",
-				"version": "6fa6a6a9298f7d033d0f2e421edfb33292807aae"
 			}
 		},
 		"profiles": {
@@ -64,28 +40,10 @@
 						"filter": "bump_manifest"
 					},
 					{
-						"filter": "fix_emissive"
-					},
-					{
-						"filter": "gametests"
-					},
-					{
-						"filter": "json_cleaner"
-					},
-					{
-						"filter": "module_importer"
-					},
-					{
 						"filter": "name_ninja"
 					},
 					{
-						"filter": "texture_convert"
-					},
-					{
 						"filter": "texture_list"
-					},
-					{
-						"filter": "ts_transpiler"
 					}
 				]
 			}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ghast.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"move",
+						"look_at_target"
+					]
+				}
+			}
+		},
+		"controller.animation.ghast.scale": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"scale"
+					]
+				}
+			}
+		},
+		"controller.animation.ghast.shoot": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"shoot": "variable.ischarging"
+						}
+					]
+				}
+			}
+		}
+	}
+}

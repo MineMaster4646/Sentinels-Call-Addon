@@ -46,6 +46,9 @@
 		},
 		"sc_jump_pad": {
 			"textures": "textures/blocks/jump_pad"
+		},
+		"sc_uac_wall1": {
+			"textures": "textures/blocks/uac_wall1"
 		}
 	}
 }

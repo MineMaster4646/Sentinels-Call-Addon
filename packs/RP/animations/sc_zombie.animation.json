@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.10.0",
 	"animations": {
 		"animation.sc_zombie.idle": {
 			"loop": true,
