@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "sc:chaingun",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": "sc_chaingun",
+			"minecraft:max_stack_size": 1,
+			"minecraft:shooter": {
+				"ammunition": [
+					{
+						"item": "sc_chain_bullet",
+						"use_offhand": true,
+						"search_inventory": true,
+						"use_in_creative": true
+					}
+				],
+				"max_draw_duration": 0,
+				"scale_power_by_draw_duration": false,
+				"charge_on_draw": false
+			},
+			"minecraft:use_modifiers": {
+				"movement_modifier": 1.0,
+				"use_duration": 0.1
+			}
+		}
+	}
+}

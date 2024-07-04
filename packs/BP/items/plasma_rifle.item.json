@@ -1,18 +1,17 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.20.50",
     "minecraft:item": {
         "description": {
-            "category": "equipment",
             "identifier": "sc:plasma_rifle",
-            "is_experimental": true
+            "menu_category": {
+                "category": "equipment"
+            }
         },
         "components": {
             "minecraft:durability": {
                 "max_durability": 200
             },
-            "minecraft:icon": {
-                "texture": "sc_plasma_rifle"
-            },
+            "minecraft:icon": "sc_plasma_rifle",
             "minecraft:max_stack_size": 1,
             "minecraft:shooter": {
                 "ammunition": [
@@ -24,7 +23,10 @@
                     }
                 ]
             },
-            "minecraft:weapon": {}
+            "minecraft:use_modifiers": {
+                "movement_modifier": 1.0,
+                "use_duration": 0.1
+            }
         }
     }
 }
