@@ -9,20 +9,24 @@
 				"glow": "entity_emissive_alpha"
 			},
 			"textures": {
-				"default": "textures/attachables/argent_axe_held",
+				"default": "textures/attachables/argent_axe",
 				"enchanted": "textures/misc/enchanted_item_glint_fire"
 			},
 			"geometry": {
 				"default": "geometry.argent_axe"
 			},
 			"animations": {
-				"wield_first_person": "animation.sword.wield_first_person",
-				"wield_third_person": "animation.sword.wield_third_person",
-				"wield": "controller.animation.sword.wield"
+				"hold_first_person": "animation.argent_axe.hold_first_person",
+				"hold_third_person": "animation.argent_axe.hold_third_person"
 			},
 			"scripts": {
 				"animate": [
-					"wield"
+					{
+						"hold_first_person": "context.is_first_person == 1.0"
+					},
+					{
+						"hold_third_person": "context.is_first_person == 0.0"
+					}
 				]
 			},
 			"render_controllers": [

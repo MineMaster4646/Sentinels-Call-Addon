@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "sc:samuel_hayden",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/samuel_hayden"
+            },
+            "geometry": {
+                "default": "geometry.samuel_hayden"
+            },
+            "animations": {
+                "idle": "animation.samuel_hayden.idle",
+                "move": "animation.samuel_hayden.move",
+                "samuel_hayden_controller": "controller.animation.samuel_hayden"
+            },
+            "scripts": {
+                "animate": [
+                    "samuel_hayden_controller"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.samuel_hayden"
+            ],
+            "spawn_egg": {
+                "base_color": "#FFFFFF",
+                "overlay_color": "#ADD8E6"
+            },
+            "enable_attachables": true
+        }
+    }
+}

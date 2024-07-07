@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.16.0",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -8,301 +8,59 @@
 				"texture_height": 32,
 				"visible_bounds_width": 4,
 				"visible_bounds_height": 3.5,
-				"visible_bounds_offset": [
-					0,
-					1.25,
-					0
-				]
+				"visible_bounds_offset": [0, 1.25, 0]
 			},
 			"bones": [
 				{
-					"name": "bone",
-					"pivot": [
-						0,
-						24,
-						0
-					]
-				},
-				{
-					"name": "pole",
-					"pivot": [
-						0,
-						24,
-						0
-					],
-					"rotation": [
-						0,
-						45,
-						0
-					],
+					"name": "super_shotgun",
+					"pivot": [0, -15, 13],
 					"binding": "q.item_slot_to_bone_name(c.item_slot)"
 				},
 				{
-					"name": "bone2",
-					"parent": "pole",
-					"pivot": [
-						0,
-						13,
-						0
-					]
-				},
-				{
 					"name": "barrel",
-					"parent": "bone2",
-					"pivot": [
-						0,
-						23,
-						0
-					],
+					"parent": "super_shotgun",
+					"pivot": [0, -0.19, 7.49],
 					"cubes": [
-						{
-							"origin": [
-								-0.5,
-								14.5,
-								-13.55
-							],
-							"size": [
-								1,
-								1,
-								10
-							],
-							"uv": [
-								0,
-								12
-							]
-						},
-						{
-							"origin": [
-								-1.5,
-								14,
-								-4.25
-							],
-							"size": [
-								3,
-								2,
-								2
-							],
-							"uv": [
-								0,
-								12
-							]
-						},
-						{
-							"origin": [
-								-1,
-								13,
-								-12
-							],
-							"size": [
-								2,
-								2,
-								8
-							],
-							"uv": [
-								12,
-								12
-							]
-						},
-						{
-							"origin": [
-								-0.5,
-								13,
-								-4
-							],
-							"size": [
-								1,
-								2,
-								2
-							],
-							"uv": [
-								14,
-								0
-							]
-						},
-						{
-							"origin": [
-								-0.5,
-								15.55,
-								-6.25
-							],
-							"size": [
-								1,
-								1,
-								3
-							],
-							"uv": [
-								12,
-								12
-							]
-						}
+						{"origin": [-0.5, 0, -0.55], "size": [1, 1, 10], "uv": [0, 12]},
+						{"origin": [-1.5, -0.5, 8.75], "size": [3, 2, 2], "uv": [0, 12]},
+						{"origin": [-1, -1.5, 1], "size": [2, 2, 8], "uv": [12, 12]},
+						{"origin": [-0.5, -1.5, 9], "size": [1, 2, 2], "uv": [14, 0]},
+						{"origin": [-0.5, 1.05, 6.75], "size": [1, 1, 3], "uv": [12, 12]}
 					]
 				},
 				{
 					"name": "barrel1",
 					"parent": "barrel",
-					"pivot": [
-						1,
-						15,
-						-1
-					],
+					"pivot": [1, 0, 4],
 					"cubes": [
-						{
-							"origin": [
-								0,
-								14,
-								-14
-							],
-							"size": [
-								2,
-								2,
-								10
-							],
-							"inflate": -0.25,
-							"pivot": [
-								1,
-								15,
-								-1
-							],
-							"rotation": [
-								0,
-								0,
-								45
-							],
-							"uv": [
-								0,
-								0
-							]
-						}
+						{"origin": [0.26777, -0.5, -0.81], "size": [2, 2, 10], "inflate": -0.25, "pivot": [1.76777, 1, 4.2], "rotation": [0, 0, 45], "uv": [0, 0]}
 					]
 				},
 				{
 					"name": "barrel2",
 					"parent": "barrel",
-					"pivot": [
-						-1,
-						15,
-						-1
-					],
+					"pivot": [-1, 0, 4],
 					"cubes": [
-						{
-							"origin": [
-								-2,
-								14,
-								-14
-							],
-							"size": [
-								2,
-								2,
-								10
-							],
-							"inflate": -0.25,
-							"pivot": [
-								-1,
-								15,
-								-1
-							],
-							"rotation": [
-								0,
-								0,
-								-45
-							],
-							"uv": [
-								0,
-								0
-							],
-							"mirror": true
-						}
+						{"origin": [-1.23223, -1, -0.81], "size": [2, 2, 10], "inflate": -0.25, "pivot": [-1.85355, -0.5, 4.2], "rotation": [0, 0, -45], "uv": [0, 0], "mirror": true}
 					]
 				},
 				{
 					"name": "handle",
-					"parent": "bone2",
-					"pivot": [
-						0,
-						12.25,
-						0.4
-					],
-					"rotation": [
-						45,
-						0,
-						0
-					],
+					"parent": "super_shotgun",
+					"pivot": [0, -1.51256, 11.80901],
+					"rotation": [45, 0, 0],
 					"cubes": [
-						{
-							"origin": [
-								-1,
-								11.75,
-								-0.85
-							],
-							"size": [
-								2,
-								5,
-								2
-							],
-							"uv": [
-								0,
-								0
-							]
-						}
+						{"origin": [-1, -3.5126, 10.80901], "size": [2, 5, 2], "uv": [0, 0]}
 					]
 				},
 				{
 					"name": "hook",
-					"parent": "bone2",
-					"pivot": [
-						0,
-						13,
-						-9
-					],
+					"parent": "super_shotgun",
+					"pivot": [0, -2.5, 1.66667],
 					"cubes": [
-						{
-							"origin": [
-								-1,
-								12,
-								-10
-							],
-							"size": [
-								2,
-								1,
-								2
-							],
-							"uv": [
-								24,
-								6
-							]
-						},
-						{
-							"origin": [
-								-2,
-								12.5,
-								-13
-							],
-							"size": [
-								4,
-								0,
-								4
-							],
-							"uv": [
-								20,
-								0
-							]
-						},
-						{
-							"origin": [
-								-1.5,
-								12.5,
-								-15
-							],
-							"size": [
-								3,
-								0,
-								2
-							],
-							"uv": [
-								22,
-								4
-							]
-						}
+						{"origin": [-1, -2.5, 3], "size": [2, 1, 2], "uv": [24, 6]},
+						{"origin": [-2, -2, 0], "size": [4, 0, 4], "uv": [20, 0]},
+						{"origin": [-1.5, -2, -2], "size": [3, 0, 2], "uv": [22, 4]}
 					]
 				}
 			]

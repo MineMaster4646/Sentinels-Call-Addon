@@ -13,6 +13,7 @@
                 "default": "geometry.sc_zombie"
             },
             "animations": {
+                "idle": "animation.sc_zombie.idle",
                 "sc_zombie_controller": "controller.animation.sc_zombie"
             },
             "scripts": {

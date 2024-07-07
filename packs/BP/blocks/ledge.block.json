@@ -3,6 +3,9 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:ledge",
+			"menu_category": {
+				"category": "construction"
+			},
 			"traits": {
     			"minecraft:placement_direction": {
       				"enabled_states": ["minecraft:cardinal_direction"],
@@ -36,14 +39,11 @@
 					0
 				]
 			},
-			"minecraft:on_player_placing": {
-				"event": "rotate"
-			},
 			"minecraft:light_emission": 1,
 			"minecraft:light_dampening": 0,
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "sc_ledge_inv",
+					"texture": "sc_ledge",
 					"render_method": "blend",
 					"face_dimming": false,
 					"ambient_occlusion": false

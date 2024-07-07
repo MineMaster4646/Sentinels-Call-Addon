@@ -20,6 +20,7 @@
 				"default": "geometry.blaze"
 			},
 			"animations": {
+				"flaming": "animation.blaze.flame",
 				"look_at_target": "animation.common.look_at_target_blaze",
 				"move": "animation.blaze.move",
 				"flame_controller": "controller.animation.blaze.flame",

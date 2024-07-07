@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "dea:plasma_rifle",
+			"identifier": "sc:plasma_rifle",
 			"materials": {
 				"default": "entity",
 				"enchanted": "entity_alphatest_glint"
@@ -16,16 +16,13 @@
 			},
 			"animations": {
 				"hold_first_person": "animation.plasma_rifle.hold_first_person",
-				"first_person_guide.right_arm.method_one": "animation.plasma_rifle.first_person_guide.right_arm.method_one",
-				"hold_third_person": "animation.plasma_rifle.hold_third_person"
+				"hold_third_person": "animation.plasma_rifle.hold_third_person",
+				"pr_shoot": "animation.plasma_rifle.shoot"
 			},
 			"scripts": {
 				"animate": [
 					{
 						"hold_first_person": "context.is_first_person == 1.0"
-					},
-					{
-						"first_person_guide.right_arm.method_one": "context.is_first_person == 1.0"
 					},
 					{
 						"hold_third_person": "context.is_first_person == 0.0"

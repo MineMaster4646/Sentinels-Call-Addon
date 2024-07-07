@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.argent_axe.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"argent_axe": {
+					"rotation": [70.68121, 62.03883, -57.04545],
+					"position": [0, 6, -3],
+					"scale": 1.5
+				}
+			}
+		},
+		"animation.argent_axe.hold_third_person": {
+			"loop": true,
+			"bones": {
+				"argent_axe": {
+					"rotation": [87.61578, -0.01564, -0.75155],
+					"position": [1, 11, -8],
+					"scale": 1.5
+				}
+			}
+		}
+	}
+}

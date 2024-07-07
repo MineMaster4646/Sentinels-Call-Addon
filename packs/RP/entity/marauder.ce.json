@@ -24,7 +24,7 @@
 				"look_at_target_default": "animation.humanoid.look_at_target.default",
 				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
 				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
-				"move": "animation.humanoid.move",
+				"walking": "animation.humanoid.move",
 				"riding.arms": "animation.humanoid.riding.arms",
 				"riding.legs": "animation.humanoid.riding.legs",
 				"holding": "animation.humanoid.holding",
@@ -38,20 +38,13 @@
 				"use_item_progress": "animation.humanoid.use_item_progress",
 				"zombie_attack_bare_hand": "animation.zombie.attack_bare_hand",
 				"swimming": "animation.zombie.swimming",
-				"hold_axe": "animation.marauder.hold_axe"
+				"hold_axe": "animation.marauder.hold_axe",
+				"marauder_controller": "controller.animation.marauder"
 			},
 			"enable_attachables": true,
 			"scripts": {
 				"animate": [
-					{
-						"look_at_target_default": "animation.humanoid.look_at_target.default"
-					},
-					{
-						"move": "query.modified_move_speed>0"
-					},
-					{
-						"hold_axe": "animation.marauder.hold_axe"
-					}
+					"marauder_controller"
 				],
 				"pre_animation": [
 					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"

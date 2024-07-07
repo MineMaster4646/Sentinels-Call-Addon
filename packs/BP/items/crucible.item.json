@@ -4,16 +4,21 @@
 		"description": {
 			"identifier": "sc:crucible",
 			"menu_category": {
-				"category": "equipment"
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
 			}
 		},
 		"components": {
 			"minecraft:can_destroy_in_creative": false,
-			"minecraft:damage": 13,
+			"minecraft:damage": {
+				"value": 5000
+			},
 			"minecraft:hand_equipped": true,
 			"minecraft:icon": "sc_crucible",
 			"minecraft:max_stack_size": 1,
-			"tag:minecraft:is_sword": {}
+			"minecraft:tags": {
+				"tags": ["minecraft:is_sword"]
+			}
 		}
 	}
 }

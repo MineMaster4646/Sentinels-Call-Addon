@@ -12,7 +12,9 @@
                 "max_durability": 200
             },
             "minecraft:icon": "sc_plasma_rifle",
-            "minecraft:max_stack_size": 1,
+            "minecraft:max_stack_size": {
+                "value": 1
+            },
             "minecraft:shooter": {
                 "ammunition": [
                     {
@@ -22,6 +24,9 @@
                         "use_in_creative": false
                     }
                 ]
+            },
+            "minecraft:use_animation": {
+                "value": "pr_shoot"
             },
             "minecraft:use_modifiers": {
                 "movement_modifier": 1.0,

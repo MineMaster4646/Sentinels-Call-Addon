@@ -13,7 +13,7 @@
                     ]
                 },
                 "moving": {
-                    "animations": ["animation.sc_zombie.walk"],
+                    "animations": ["animation.sc_zombie.idle"],
                     "transitions": [
                         {
                             "idle": "!q.is_moving"

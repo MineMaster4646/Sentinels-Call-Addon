@@ -3,6 +3,9 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:swingbar",
+			"menu_category": {
+				"category": "construction"
+			},
 			"traits": {
 				"minecraft:placement_direction": {
 					"enabled_states": ["minecraft:cardinal_direction"],
@@ -18,32 +21,13 @@
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:selection_box": {
-				"origin": [
-					5,
-					7.5,
-					-1.5
-				],
-				"size": [
-					3,
-					3,
-					3
-				]
-			},
 			"minecraft:collision_box": {
-				"origin": [
-					0,
-					0,
-					0
-				],
-				"size": [
-					0,
-					0,
-					0
-				]
+				"origin": [-8, 8, -1.5],
+				"size": [16, 3, 3]
 			},
-			"minecraft:on_player_placing": {
-				"event": "rotate"
+			"minecraft:selection_box": {
+				"origin": [-8, 8, -1.5],
+				"size": [16, 3, 3]
 			},
 			"minecraft:light_emission": 1,
 			"minecraft:light_dampening": 0

@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:entity": {
+        "description": {
+            "identifier": "sc:samuel_hayden",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:annotation.open_door": {},
+            "minecraft:health": {
+                "value": 40,
+                "max": 40
+            },
+            "minecraft:jump.dynamic": {},
+            "minecraft:movement": {
+                "value": 0.1
+            },
+            "minecraft:movement.basic": {
+                "max_turn": 30
+            },
+            "minecraft:nameable": {
+                "allow_name_tag_renaming": true,
+                "always_show": false
+            },
+            "minecraft:navigation.walk": {
+                "avoid_portals": true,
+                "avoid_sun": true,
+                "avoid_water": true,
+                "can_open_doors": true,
+                "can_open_iron_doors": true,
+                "can_path_from_air": true,
+                "can_path_over_lava": true,
+                "can_path_over_water": true,
+                "can_sink": true,
+                "can_walk_in_lava": true
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {}
+        }
+    }
+}

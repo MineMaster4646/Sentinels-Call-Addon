@@ -2,7 +2,10 @@
 	"format_version": "1.20.60",
 	"minecraft:block": {
 		"description": {
-			"identifier": "sc:jump_pad"
+			"identifier": "sc:jump_pad",
+			"menu_category": {
+				"category": "construction"
+			}
 		},
 		"components": {
 			"minecraft:collision_box": {
@@ -13,7 +16,13 @@
 					1
 				]
 			},
-			"minecraft:geometry": "geometry.jump_pad"
+			"minecraft:geometry": "geometry.jump_pad",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "sc_jump_pad",
+					"render_method": "blend"
+				}
+			}
 		}
 	}
 }

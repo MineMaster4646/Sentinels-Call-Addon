@@ -5,16 +5,8 @@
 			"loop": true,
 			"bones": {
 				"plasma_rifle": {
-					"rotation": [
-						102.62124,
-						59.5573,
-						-41.54769
-					],
-					"position": [
-						2,
-						8.5,
-						1.4
-					],
+					"rotation": [87.62124, 59.5573, -41.54769],
+					"position": [2, 12.5, -1.6],
 					"scale": 2
 				}
 			}
@@ -23,16 +15,20 @@
 			"loop": true,
 			"bones": {
 				"plasma_rifle": {
-					"rotation": [
-						15.27573,
-						-1.02632,
-						-0.30006
-					],
-					"position": [
-						-4,
-						9,
-						-11
-					]
+					"rotation": [87.77573, -1.02632, -0.30006],
+					"position": [1, 12, -7]
+				}
+			}
+		},
+		"animation.plasma_rifle.shoot": {
+			"animation_length": 0.125,
+			"bones": {
+				"plasma_rifle": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0625": [1, -1, -1],
+						"0.125": [0, 0, 0]
+					}
 				}
 			}
 		}

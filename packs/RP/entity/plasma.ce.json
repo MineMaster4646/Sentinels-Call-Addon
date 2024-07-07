@@ -1,18 +1,18 @@
 {
-  "format_version": "1.10.0",
-  "minecraft:client_entity": {
-	"description": {
-	  "identifier": "dea:plasma",
-	  "materials": {
-		"default": "entity_alphatest"
-	  },
-	  "textures": {
-		"default": "textures/entity/plasma"
-	  },
-	  "geometry": {
-		"default": "geometry.plasma"
-	  },
-	  "render_controllers": ["controller.render.plasma"]
-	}
-  }
+	"format_version": "1.10.0",
+  	"minecraft:client_entity": {
+		"description": {
+	  		"identifier": "sc:plasma",
+	  		"materials": {
+				"default": "entity_alphatest"
+	  		},
+	  		"textures": {
+				"default": "textures/entity/plasma"
+	  		},
+	  		"geometry": {
+				"default": "geometry.plasma"
+	  		},
+	  		"render_controllers": ["controller.render.plasma"]
+		}
+  	}
 }

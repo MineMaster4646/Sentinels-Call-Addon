@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.20.10",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:meat_hook",

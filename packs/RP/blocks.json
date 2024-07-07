@@ -40,5 +40,24 @@
 	"sc:uac_wall1": {
 		"textures": "sc_uac_wall1",
 		"sound": "stone"
+	},
+	"sc:uac_wall2": {
+		"textures": "sc_uac_wall2",
+		"sound": "stone"
+	},
+	"sc:uac_wall3": {
+		"textures": "sc_uac_wall3",
+		"sound": "stone"
+	},
+	"sc:uac_wall4": {
+		"textures": {
+			"down": "sc_uac_wall4_down",
+			"up": "sc_uac_wall4_up",
+			"north": "sc_uac_wall4_north",
+			"east": "sc_uac_wall4_east",
+			"south": "sc_uac_wall4_south",
+			"west": "sc_uac_wall4_west"
+		},
+		"sound": "stone"
 	}
 }
