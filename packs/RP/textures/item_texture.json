@@ -5,8 +5,8 @@
 		"sc_plasma_rifle": {
 			"textures": "textures/items/plasma_rifle"
 		},
-		"sc_plasma": {
-			"textures": "textures/items/plasma"
+		"sc_cells": {
+			"textures": "textures/items/cells"
 		},
 		"sc_shotgun": {
 			"textures": "textures/items/shotgun"

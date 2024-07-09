@@ -1,26 +1,24 @@
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.sc_zombie":{
-            "initial_state": "idle",
-            "states": {
-                "idle": {
-                    "animations": ["animation.sc_zombie.idle"],
-                    "transitions": [
-                        {
-                            "moving": "q.is_moving"
-                        }
-                    ]
-                },
-                "moving": {
-                    "animations": ["animation.sc_zombie.idle"],
-                    "transitions": [
-                        {
-                            "idle": "!q.is_moving"
-                        }
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.sc_zombie": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": ["idle"],
+					"transitions": [
+						{"walking": "q.ground_speed > 0.025"}
+					],
+					"blend_transition": 0.2
+				},
+				"walking": {
+					"animations": ["walking"],
+					"transitions": [
+						{"idle": "q.ground_speed < 0.05"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		}
+	}
 }

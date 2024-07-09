@@ -9,6 +9,10 @@
         },
         "components": {
             "minecraft:annotation.open_door": {},
+            "minecraft:behavior.random_stroll": {
+                "priority": 0,
+                "speed_multiplier": 1
+            },
             "minecraft:health": {
                 "value": 40,
                 "max": 40
@@ -26,7 +30,7 @@
             },
             "minecraft:navigation.walk": {
                 "avoid_portals": true,
-                "avoid_sun": true,
+                "avoid_sun": false,
                 "avoid_water": true,
                 "can_open_doors": true,
                 "can_open_iron_doors": true,

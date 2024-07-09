@@ -4,7 +4,7 @@
 		"animation.plasma_rifle.hold_first_person": {
 			"loop": true,
 			"bones": {
-				"plasma_rifle": {
+				"rightArm": {
 					"rotation": [87.62124, 59.5573, -41.54769],
 					"position": [2, 12.5, -1.6],
 					"scale": 2
@@ -14,19 +14,24 @@
 		"animation.plasma_rifle.hold_third_person": {
 			"loop": true,
 			"bones": {
-				"plasma_rifle": {
-					"rotation": [87.77573, -1.02632, -0.30006],
-					"position": [1, 12, -7]
+				"rightArm": {
+					"rotation": [-75, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-90, 0, 0],
+					"position": [0, 0, 0]
 				}
 			}
 		},
 		"animation.plasma_rifle.shoot": {
+			"loop": true,
 			"animation_length": 0.125,
 			"bones": {
-				"plasma_rifle": {
+				"rightArm": {
 					"position": {
 						"0.0": [0, 0, 0],
-						"0.0625": [1, -1, -1],
+						"0.0625": [0, 0, -1],
 						"0.125": [0, 0, 0]
 					}
 				}

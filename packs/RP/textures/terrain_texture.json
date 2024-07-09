@@ -73,6 +73,63 @@
 		},
 		"sc_uac_wall4_west": {
 			"textures": "textures/blocks/uac_wall4_2"
+		},
+		"sc_uac_wall5": {
+			"textures": "textures/blocks/uac_wall5"
+		},
+		"sc_uac_wall6_down": {
+			"textures": "textures/blocks/uac_wall6_1"
+		},
+		"sc_uac_wall6_up": {
+			"textures": "textures/blocks/uac_wall6_1"
+		},
+		"sc_uac_wall6_north": {
+			"textures": "textures/blocks/uac_wall6_1"
+		},
+		"sc_uac_wall6_east": {
+			"textures": "textures/blocks/uac_wall6_2"
+		},
+		"sc_uac_wall6_south": {
+			"textures": "textures/blocks/uac_wall6_1"
+		},
+		"sc_uac_wall6_west": {
+			"textures": "textures/blocks/uac_wall6_2"
+		},
+		"sc_uac_wall7_down": {
+			"textures": "textures/blocks/uac_wall7_1"
+		},
+		"sc_uac_wall7_up": {
+			"textures": "textures/blocks/uac_wall7_1"
+		},
+		"sc_uac_wall7_north": {
+			"textures": "textures/blocks/uac_wall7_1"
+		},
+		"sc_uac_wall7_east": {
+			"textures": "textures/blocks/uac_wall7_2"
+		},
+		"sc_uac_wall7_south": {
+			"textures": "textures/blocks/uac_wall7_1"
+		},
+		"sc_uac_wall7_west": {
+			"textures": "textures/blocks/uac_wall7_2"
+		},
+		"sc_uac_wall8_down": {
+			"textures": "textures/blocks/uac_wall8_1"
+		},
+		"sc_uac_wall8_up": {
+			"textures": "textures/blocks/uac_wall8_1"
+		},
+		"sc_uac_wall8_north": {
+			"textures": "textures/blocks/uac_wall8_1"
+		},
+		"sc_uac_wall8_east": {
+			"textures": "textures/blocks/uac_wall8_2"
+		},
+		"sc_uac_wall8_south": {
+			"textures": "textures/blocks/uac_wall8_1"
+		},
+		"sc_uac_wall8_west": {
+			"textures": "textures/blocks/uac_wall8_2"
 		}
 	}
 }

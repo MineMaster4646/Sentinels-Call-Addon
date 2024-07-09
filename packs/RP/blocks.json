@@ -59,5 +59,42 @@
 			"west": "sc_uac_wall4_west"
 		},
 		"sound": "stone"
+	},
+	"sc:uac_wall5": {
+		"textures": "sc_uac_wall5",
+		"sound": "stone"
+	},
+	"sc:uac_wall6": {
+		"textures": {
+			"down": "sc_uac_wall6_down",
+			"up": "sc_uac_wall6_up",
+			"north": "sc_uac_wall6_north",
+			"east": "sc_uac_wall6_east",
+			"south": "sc_uac_wall6_south",
+			"west": "sc_uac_wall6_west"
+		},
+		"sound": "stone"
+	},
+	"sc:uac_wall7": {
+		"textures": {
+			"down": "sc_uac_wall7_down",
+			"up": "sc_uac_wall7_up",
+			"north": "sc_uac_wall7_north",
+			"east": "sc_uac_wall7_east",
+			"south": "sc_uac_wall7_south",
+			"west": "sc_uac_wall7_west"
+		},
+		"sound": "stone"
+	},
+	"sc:uac_wall8": {
+		"textures": {
+			"down": "sc_uac_wall8_down",
+			"up": "sc_uac_wall8_up",
+			"north": "sc_uac_wall8_north",
+			"east": "sc_uac_wall8_east",
+			"south": "sc_uac_wall8_south",
+			"west": "sc_uac_wall8_west"
+		},
+		"sound": "stone"
 	}
 }

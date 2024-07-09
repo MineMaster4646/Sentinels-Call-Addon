@@ -18,15 +18,12 @@
             "minecraft:shooter": {
                 "ammunition": [
                     {
-                        "item": "sc:plasma",
+                        "item": "sc:cells",
                         "use_offhand": true,
                         "search_inventory": true,
                         "use_in_creative": false
                     }
                 ]
-            },
-            "minecraft:use_animation": {
-                "value": "pr_shoot"
             },
             "minecraft:use_modifiers": {
                 "movement_modifier": 1.0,

@@ -15,17 +15,12 @@
 				"default": "geometry.plasma_rifle"
 			},
 			"animations": {
-				"hold_first_person": "animation.plasma_rifle.hold_first_person",
-				"hold_third_person": "animation.plasma_rifle.hold_third_person",
-				"pr_shoot": "animation.plasma_rifle.shoot"
+				"hold_first_person": "animation.plasma_rifle.hold_first_person"
 			},
 			"scripts": {
 				"animate": [
 					{
 						"hold_first_person": "context.is_first_person == 1.0"
-					},
-					{
-						"hold_third_person": "context.is_first_person == 0.0"
 					}
 				]
 			},

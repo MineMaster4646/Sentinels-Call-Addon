@@ -7,14 +7,14 @@
 				"idle": {
 					"animations": ["idle"],
 					"transitions": [
-						{"move": "q.ground_speed > 1.0"}
+						{"walking": "q.ground_speed > 0.05"}
 					],
 					"blend_transition": 0.2
 				},
-				"move": {
-					"animations": ["move"],
+				"walking": {
+					"animations": ["walking"],
 					"transitions": [
-						{"idle": "q.ground_speed < 0.5"}
+						{"idle": "q.ground_speed < 0.1"}
 					],
 					"blend_transition": 0.2
 				}
