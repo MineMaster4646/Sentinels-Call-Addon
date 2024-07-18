@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.21.0",
     "minecraft:entity": {
         "description": {
             "identifier": "sc:zombie",
@@ -52,8 +52,8 @@
                 "despawn_from_distance": {}
             },
             "minecraft:health": {
-                "value": 200,
-                "max": 200
+                "value": 20,
+                "max": 20
             },
             "minecraft:jump.static": {
             },

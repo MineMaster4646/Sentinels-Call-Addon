@@ -40,10 +40,16 @@
 		  		"animate": [
 					"root",
 					{
-						"pr_shoot": "q.is_using_item&&q.is_item_name_any('slot.weapon.mainhand','sc:plasma_rifle')"
+						"pr_shoot_first_person": "v.is_first_person&&q.is_using_item&&q.is_item_name_any('slot.weapon.mainhand','sc:plasma_rifle')"
+					},
+					{
+						"pr_shoot_third_person": "!v.is_first_person&&q.is_using_item&&q.is_item_name_any('slot.weapon.mainhand','sc:plasma_rifle')"
 					},
 					{
 						"pr_hold_third_person": "!v.is_first_person&&q.is_item_name_any('slot.weapon.mainhand','sc:plasma_rifle')"
+					},
+					{
+						"pr_move": "q.is_moving&&q.is_item_name_any('slot.weapon.mainhand','sc:plasma_rifle')"
 					}
 		  		]
 			},
@@ -105,7 +111,9 @@
 			  	"holding_brush": "animation.humanoid.holding_brush",
 			  	"brushing": "animation.humanoid.brushing",
 				"pr_hold_third_person": "animation.plasma_rifle.hold_third_person",
-				"pr_shoot": "animation.plasma_rifle.shoot"
+				"pr_shoot_first_person": "animation.plasma_rifle.shoot_first_person",
+				"pr_shoot_third_person": "animation.plasma_rifle.shoot_third_person",
+				"pr_move": "animation.plasma_rifle.move"
 			},
 			"render_controllers": [
 		  		{ "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator" },

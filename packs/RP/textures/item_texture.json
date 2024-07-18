@@ -43,6 +43,9 @@
 		},
 		"sc_chaingun": {
 			"textures": "textures/items/chaingun"
+		},
+		"sc_praetor_ingot": {
+			"textures": "textures/items/praetor_ingot"
 		}
 	}
 }

@@ -129,7 +129,7 @@
 				}
 			}
 		},
-		"animation.samuel_hayden.move": {
+		"animation.samuel_hayden.walking": {
 			"loop": true,
 			"animation_length": 3,
 			"bones": {

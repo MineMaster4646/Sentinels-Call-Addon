@@ -14,6 +14,7 @@
             },
             "animations": {
                 "idle": "animation.sc_zombie.idle",
+                "walking": "animation.sc_zombie.walking",
                 "sc_zombie_controller": "controller.animation.sc_zombie"
             },
             "scripts": {
@@ -21,7 +22,11 @@
                     "sc_zombie_controller"
                 ]
             },
-            "render_controllers": ["controller.render.sc_zombie"]
+            "render_controllers": ["controller.render.sc_zombie"],
+            "spawn_egg": {
+                "base_color": "#D1C59C",
+                "overlay_color": "#A49977"
+            }
         }
     }
 }

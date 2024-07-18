@@ -1,0 +1,24 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "sc:fireborne_baron",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/entity/fireborne_baron"
+            },
+            "geometry": {
+                "default": "geometry.fireborne_baron"
+            },
+            "render_controllers": [
+                "controller.render.fireborne_baron"
+            ],
+            "spawn_egg": {
+                "base_color": "#C5C5C5",
+                "overlay_color": "#FF8707"
+            }
+        }
+    }
+}

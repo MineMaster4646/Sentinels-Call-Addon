@@ -14,7 +14,7 @@
             },
             "animations": {
                 "idle": "animation.samuel_hayden.idle",
-                "move": "animation.samuel_hayden.move",
+                "walking": "animation.samuel_hayden.walking",
                 "samuel_hayden_controller": "controller.animation.samuel_hayden"
             },
             "scripts": {

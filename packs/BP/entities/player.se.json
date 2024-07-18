@@ -118,9 +118,6 @@
 			"minecraft:attack": {
 				"damage": 1
 			},
-			"minecraft:health": {
-				"value": 200
-			},
 			"minecraft:exhaustion_values": {
         		"heal": 6,
         		"jump": 0.05,
