@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.41",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sc:praetor_boots"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+			"P P",
+			"I I"
+		],
+		"key": {
+			"P": "sc:praetor_ingot",
+			"I": "minecraft:iron_ingot"
+		},
+		"result": [
+			"sc:praetor_boots"
+		]
+	}
+}

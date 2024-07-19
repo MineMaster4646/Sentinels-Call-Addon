@@ -1,0 +1,22 @@
+{
+	"format_version": "1.17.41",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sc:praetor_helmet"
+		},
+		"tags": ["crafting_table"],
+		"pattern": [
+			"PIP",
+			"PBP",
+			"PIP"
+		],
+		"key": {
+			"P": "sc:praetor_ingot",
+			"I": "minecraft:iron_ingot",
+			"B": "minecraft:cyan_stained_glass_pane"
+		},
+		"result": [
+			"sc:praetor_helmet"
+		]
+	}
+}

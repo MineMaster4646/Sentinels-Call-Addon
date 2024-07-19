@@ -8,7 +8,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/attachables/super_shotgun",
+				"default": "textures/entity/super_shotgun",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
