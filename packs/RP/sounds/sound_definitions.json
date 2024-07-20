@@ -1,10 +1,100 @@
 {
 	"format_version": "1.10.0",
 	"sound_definitions": {
+		"at_dooms_gate": {
+			"sounds": [
+				{
+					"name": "sounds/at_dooms_gate",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
 		"bfg_division": {
 			"sounds": [
 				{
 					"name": "sounds/bfg_division",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"command_and_control": {
+			"sounds": [
+				{
+					"name": "sounds/command_and_control",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"cultist_base": {
+			"sounds": [
+				{
+					"name": "sounds/cultist_base",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"dr_samuel_hayden": {
+			"sounds": [
+				{
+					"name": "sounds/dr_samuel_hayden",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"e1m1_at_dooms_gate": {
+			"sounds": [
+				{
+					"name": "sounds/e1m1_at_dooms_gate",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"e1m2_the_imps_song": {
+			"sounds": [
+				{
+					"name": "sounds/e1m2_the_imps_song",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"rip_and_tear": {
+			"sounds": [
+				{
+					"name": "sounds/rip_and_tear",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"sos_from_earth": {
+			"sounds": [
+				{
+					"name": "sounds/sos_from_earth",
+					"volume": 1.0
+				}
+			],
+			"category": "music",
+			"max_distance": 100.0
+		},
+		"the_only_thing_they_fear_is_you": {
+			"sounds": [
+				{
+					"name": "sounds/the_only_thing_they_fear_is_you",
 					"volume": 1.0
 				}
 			],
