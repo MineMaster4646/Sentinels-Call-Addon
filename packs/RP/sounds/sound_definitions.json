@@ -71,6 +71,16 @@
 			"category": "music",
 			"max_distance": 100.0
 		},
+		"plasma_rifle": {
+			"sounds": [
+				{
+					"name": "sounds/plasma_rifle",
+					"volume": 1.0
+				}
+			],
+			"category": "player",
+			"max_distance": 100.0
+		},
 		"rip_and_tear": {
 			"sounds": [
 				{

@@ -87,6 +87,7 @@
 					}
                 },
                 "power": 1.3,
+                "shoot_sound": "plasma_rifle",
                 "uncertainty_base": 5,
                 "offset": [
                     0,
