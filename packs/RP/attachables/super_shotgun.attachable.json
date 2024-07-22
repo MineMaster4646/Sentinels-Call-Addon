@@ -14,9 +14,9 @@
 			"geometry": {
 				"default": "geometry.super_shotgun"
 			},
-			"animations": {},
-			"scripts": {},
-			"render_controllers": ["controller.render.gun"]
+			"render_controllers": [
+				"controller.render.item_default"
+			]
 		}
 	}
 }

@@ -46,6 +46,18 @@
 		},
 		"sc_praetor_ingot": {
 			"textures": "textures/items/praetor_ingot"
+		},
+		"sc_argent": {
+			"textures": "textures/items/argent"
+		},
+		"sc_bullets": {
+			"textures": "textures/items/bullets"
+		},
+		"sc_rockets": {
+			"textures": "textures/items/rockets"
+		},
+		"sc_shells": {
+			"textures": "textures/items/shells"
 		}
 	}
 }

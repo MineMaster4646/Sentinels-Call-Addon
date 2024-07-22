@@ -15,18 +15,8 @@
 			"geometry": {
 				"default": "geometry.crucible"
 			},
-			"animations": {
-				"wield_first_person": "animation.sword.wield_first_person",
-				"wield_third_person": "animation.sword.wield_third_person",
-				"wield": "controller.animation.sword.wield"
-			},
-			"scripts": {
-				"animate": [
-					"wield"
-				]
-			},
 			"render_controllers": [
-				"controller.render.crucible"
+				"controller.render.item_default"
 			]
 		}
 	}

@@ -18,7 +18,7 @@
 			"animations": {},
 			"scripts": {},
 			"render_controllers": [
-				"controller.render.bfg"
+				"controller.render.item_default"
 			]
 		}
 	}

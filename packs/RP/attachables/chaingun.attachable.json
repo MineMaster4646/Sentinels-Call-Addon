@@ -29,7 +29,7 @@
 				]
 			},
 			"render_controllers": [
-				"controller.render.chaingun"
+				"controller.render.item_default"
 			]
 		}
 	}

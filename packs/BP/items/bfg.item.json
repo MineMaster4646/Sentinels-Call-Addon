@@ -10,10 +10,14 @@
 		"components": {
 			"minecraft:icon": "sc_bfg",
 			"minecraft:max_stack_size": 1,
+			"minecraft:projectile": {
+				"minimum_critical_power": 0,
+				"projectile_entity": "sc:bfb"
+			},
 			"minecraft:shooter": {
 				"ammunition": [
 					{
-						"item": "sc:bfb",
+						"item": "sc:argent",
 						"use_offhand": true,
 						"search_inventory": true,
 						"use_in_creative": true

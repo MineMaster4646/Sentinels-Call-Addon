@@ -15,18 +15,8 @@
             "geometry": {
                 "default": "geometry.chainsaw"
             },
-            "animations": {
-                "wield_first_person": "animation.gun.wield_first_person",
-                "wield_third_person": "animation.sword.wield_third_person",
-                "wield": "controller.animation.sword.wield"
-            },
-            "scripts": {
-                "animate": [
-                    "wield"
-                ]
-            },
             "render_controllers": [
-                "controller.render.chainsaw"
+                "controller.render.item_default"
             ]
         }
     }

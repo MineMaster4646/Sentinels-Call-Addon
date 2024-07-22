@@ -10,10 +10,14 @@
 		"components": {
 			"minecraft:icon": "sc_chaingun",
 			"minecraft:max_stack_size": 1,
+			"minecraft:projectile": {
+				"minimum_critical_power": 0,
+				"projectile_entity": "sc:bullet"
+			},
 			"minecraft:shooter": {
 				"ammunition": [
 					{
-						"item": "sc_chain_bullet",
+						"item": "sc:bullets",
 						"use_offhand": true,
 						"search_inventory": true,
 						"use_in_creative": true
