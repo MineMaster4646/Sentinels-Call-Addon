@@ -12,17 +12,93 @@
 			},
 			"bones": [
 				{
-					"name": "plasma_rifle",
-					"pivot": [1.5, 17.08048, -3.7932],
-					"rotation": [90, 0, 0],
-					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
 					"cubes": [
-						{"origin": [-1.75, 11, -6], "size": [3, 5, 5], "uv": [0, 0]},
-						{"origin": [-1.25, 11, 1], "size": [2, 7, 2], "pivot": [-0.5, 14.78288, 2.3408], "rotation": [17.5, 0, 0], "uv": [0, 10]},
-						{"origin": [-2.75, 15.5, -15.8], "size": [5, 5.6, 3], "uv": [0, 19]},
-						{"origin": [-2.6, 16, -12.8], "size": [4.6, 4.6, 10], "uv": [0, 27]},
-						{"origin": [-2.6, 16, -2.8], "size": [4.6, 3.6, 6], "uv": [0, 41]},
-						{"origin": [-1.6, 19, -2.9], "size": [2.6, 1.6, 6], "uv": [0, 50]}
+						{"origin": [-1, 4, -2], "size": [2, 1.7, 5], "uv": [50, 0]}
+					]
+				},
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0],
+					"cubes": [
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArmExtra",
+					"parent": "rightArm",
+					"pivot": [5, 22, 0],
+					"cubes": [
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "gun",
+					"parent": "rightArm",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "gunBody",
+					"parent": "gun",
+					"pivot": [-0.525, 2.01928, 1.018],
+					"cubes": [
+						{"origin": [-2.5, 0, -10], "size": [5, 5.6, 3], "uv": [20, 14]},
+						{"origin": [-2.35, 0.5, -7], "size": [4.6, 4.6, 10], "uv": [0, 0]},
+						{"origin": [-1.8, 1.5, -0.3], "size": [4.6, 2.6, 2.5], "uv": [0, 23]},
+						{"origin": [-2.8, 1.5, -0.3], "size": [4.6, 2.6, 2.5], "uv": [0, 23]},
+						{"origin": [-1.35, 3.5, 2.9], "size": [2.6, 1.6, 6], "uv": [14, 22]},
+						{"origin": [-2.35, 0.5, 3], "size": [4.6, 3.6, 6], "uv": [0, 14]},
+						{"origin": [-1, -2.5, 5.7991], "size": [2, 6, 2], "pivot": [0.5, 1.7716, 6.47617], "rotation": [17.5, 0, 0], "uv": [0, 0]},
+						{"origin": [-1.5, -2.5, -0.2099], "size": [3, 4, 5], "uv": [18, 0]}
+					]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [1.9, 12, 0],
+					"cubes": [
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-1.9, 12, 0],
+					"cubes": [
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "uv": [0, 29]}
 					]
 				}
 			]

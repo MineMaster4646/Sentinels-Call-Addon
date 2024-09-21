@@ -1,100 +1,120 @@
 {
-	"format_version": [1, 0, 0],
-	"netherrack": {
-		"isotropic": {
-			"up": true,
-			"down": true
-		},
-		"textures": {
-			"side": "netherrack",
-			"down": "netherrack",
-			"up": "netherrack_top"
-		},
-		"sound": "netherrack"
-	},
-	"nether_gold_ore": {
-		"textures": {
-			"side": "nether_gold_ore",
-			"down": "nether_gold_ore",
-			"up": "nether_gold_ore_top"
-		},
-		"sound": "nether_gold_ore"
-	},
-	"quartz_ore": {
-		"textures": {
-			"side": "quartz_ore",
-			"down": "quartz_ore",
-			"up": "quartz_ore_top"
-		},
-		"sound": "nether_gold_ore"
-	},
-	"sc:ledge": {
-		"sound": "stone"
-	},
-	"sc:swingbar": {
-		"sound": "stone"
-	},
-	"sc:jump_pad": {
-		"sound": "stone"
-	},
-	"sc:uac_wall1": {
-		"textures": "sc_uac_wall1",
-		"sound": "stone"
-	},
-	"sc:uac_wall2": {
-		"textures": "sc_uac_wall2",
-		"sound": "stone"
-	},
-	"sc:uac_wall3": {
-		"textures": "sc_uac_wall3",
-		"sound": "stone"
-	},
-	"sc:uac_wall4": {
-		"textures": {
-			"down": "sc_uac_wall4_down",
-			"up": "sc_uac_wall4_up",
-			"north": "sc_uac_wall4_north",
-			"east": "sc_uac_wall4_east",
-			"south": "sc_uac_wall4_south",
-			"west": "sc_uac_wall4_west"
-		},
-		"sound": "stone"
-	},
-	"sc:uac_wall5": {
-		"textures": "sc_uac_wall5",
-		"sound": "stone"
-	},
-	"sc:uac_wall6": {
-		"textures": {
-			"down": "sc_uac_wall6_down",
-			"up": "sc_uac_wall6_up",
-			"north": "sc_uac_wall6_north",
-			"east": "sc_uac_wall6_east",
-			"south": "sc_uac_wall6_south",
-			"west": "sc_uac_wall6_west"
-		},
-		"sound": "stone"
-	},
-	"sc:uac_wall7": {
-		"textures": {
-			"down": "sc_uac_wall7_down",
-			"up": "sc_uac_wall7_up",
-			"north": "sc_uac_wall7_north",
-			"east": "sc_uac_wall7_east",
-			"south": "sc_uac_wall7_south",
-			"west": "sc_uac_wall7_west"
-		},
-		"sound": "stone"
-	},
-	"sc:uac_wall8": {
-		"textures": {
-			"down": "sc_uac_wall8_down",
-			"up": "sc_uac_wall8_up",
-			"north": "sc_uac_wall8_north",
-			"east": "sc_uac_wall8_east",
-			"south": "sc_uac_wall8_south",
-			"west": "sc_uac_wall8_west"
-		},
-		"sound": "stone"
-	}
+    "format_version": [
+        1,
+        0,
+        0
+    ],
+    "netherrack": {
+        "isotropic": {
+            "up": true,
+            "down": true
+        },
+        "textures": {
+            "side": "netherrack",
+            "down": "netherrack",
+            "up": "netherrack_top"
+        },
+        "sound": "netherrack"
+    },
+    "nether_gold_ore": {
+        "textures": {
+            "side": "nether_gold_ore",
+            "down": "nether_gold_ore",
+            "up": "nether_gold_ore_top"
+        },
+        "sound": "nether_gold_ore"
+    },
+    "quartz_ore": {
+        "textures": {
+            "side": "quartz_ore",
+            "down": "quartz_ore",
+            "up": "quartz_ore_top"
+        },
+        "sound": "nether_gold_ore"
+    },
+    "sc:ledge": {
+        "sound": "stone"
+    },
+    "sc:swingbar": {
+        "sound": "stone"
+    },
+    "sc:jump_pad": {
+        "sound": "stone"
+    },
+    "sc:uac_wall1": {
+        "textures": "sc_uac_wall1",
+        "sound": "stone"
+    },
+    "sc:uac_wall2": {
+        "textures": "sc_uac_wall2",
+        "sound": "stone"
+    },
+    "sc:uac_wall3": {
+        "textures": "sc_uac_wall3",
+        "sound": "stone"
+    },
+    "sc:uac_wall4": {
+        "textures": {
+            "down": "sc_uac_wall4_down",
+            "up": "sc_uac_wall4_up",
+            "north": "sc_uac_wall4_north",
+            "east": "sc_uac_wall4_east",
+            "south": "sc_uac_wall4_south",
+            "west": "sc_uac_wall4_west"
+        },
+        "sound": "stone"
+    },
+    "sc:uac_wall5": {
+        "textures": "sc_uac_wall5",
+        "sound": "stone"
+    },
+    "sc:uac_wall6": {
+        "textures": {
+            "down": "sc_uac_wall6_down",
+            "up": "sc_uac_wall6_up",
+            "north": "sc_uac_wall6_north",
+            "east": "sc_uac_wall6_east",
+            "south": "sc_uac_wall6_south",
+            "west": "sc_uac_wall6_west"
+        },
+        "sound": "stone"
+    },
+    "sc:uac_wall7": {
+        "textures": {
+            "down": "sc_uac_wall7_down",
+            "up": "sc_uac_wall7_up",
+            "north": "sc_uac_wall7_north",
+            "east": "sc_uac_wall7_east",
+            "south": "sc_uac_wall7_south",
+            "west": "sc_uac_wall7_west"
+        },
+        "sound": "stone"
+    },
+    "sc:uac_wall8": {
+        "textures": {
+            "down": "sc_uac_wall8_down",
+            "up": "sc_uac_wall8_up",
+            "north": "sc_uac_wall8_north",
+            "east": "sc_uac_wall8_east",
+            "south": "sc_uac_wall8_south",
+            "west": "sc_uac_wall8_west"
+        },
+        "sound": "stone"
+    },
+    "sc:gore_intestines": {
+        "textures": "sc_gore_intestines",
+        "sound": "honey_block"
+    },
+    "sc:gore_meat": {
+        "textures": "sc_gore_meat",
+        "sound": "honey_block"
+    },
+    "sc:uac_floor1": {
+        "textures": "sc_uac_floor1",
+        "sound": "stone"
+    },
+    "sc:uac_floor2": {
+        "textures": "sc_uac_floor2",
+        "sound": "stone"
+    }
 }

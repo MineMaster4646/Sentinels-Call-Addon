@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.0",
+    "format_version": "1.21.30",
     "minecraft:entity": {
         "description": {
             "identifier": "sc:plasma",
@@ -10,6 +10,26 @@
         "component_groups": {
             "destroy": {
                 "minecraft:instant_despawn": {}
+            },
+            "plasma_skin_0": {
+                "minecraft:skin_id": {
+                    "value": 0
+                }
+            },
+            "plasma_skin_1": {
+                "minecraft:skin_id": {
+                    "value": 1
+                }
+            },
+            "pr_plasma": {
+                "minecraft:mark_variant": {
+                    "value": 0
+                }
+            },
+            "b_plasma": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
             }
         },
         "components": {

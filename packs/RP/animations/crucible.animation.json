@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crucible.hold_first_person": {
+			"loop": true,
+			"bones": {
+				"pole": {
+					"rotation": [-240.36809, -50.72655, -578.53051],
+					"position": [-15.93292, 14.00749, -8.3526]
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.0",
+	"format_version": "1.21.30",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "sc:meat_hook_ride2",

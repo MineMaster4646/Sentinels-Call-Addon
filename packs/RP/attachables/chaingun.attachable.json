@@ -16,12 +16,13 @@
 				"default": "geometry.chaingun"
 			},
 			"animations": {
-				"spin": "animation.chaingun.spin"
+				"cg_hold_third_person": "animation.chaingun.hold_third_person",
+				"cg_shoot": "animation.chaingun.shoot"
 			},
 			"scripts": {
 				"animate": [
 					{
-						"spin": "query.cooldown_time_remaining ? true : false"
+						"cg_shoot": "q.cooldown_time_remaining ? true : false"
 					}
 				],
 				"pre_animation": [

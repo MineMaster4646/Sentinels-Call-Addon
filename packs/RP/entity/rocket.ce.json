@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sc:rocket",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/rocket"
+			},
+			"geometry": {
+				"default": "geometry.rocket"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

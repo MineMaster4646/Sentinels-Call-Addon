@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.70",
+    "format_version": "1.21.30",
     "minecraft:item": {
         "description": {
             "identifier": "sc:plasma_rifle",
@@ -8,30 +8,23 @@
             }
         },
         "components": {
-            "minecraft:durability": {
-                "max_durability": 200
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:food": {
+                "can_always_eat": true
             },
+            "minecraft:hand_equipped": true,
             "minecraft:icon": "sc_plasma_rifle",
-            "minecraft:max_stack_size": {
-                "value": 1
-            },
-            "minecraft:projectile": {
-                "minimum_critical_power": 0,
-                "projectile_entity": "sc:plasma"
-            },
-            "minecraft:shooter": {
-                "ammunition": [
-                    {
-                        "item": "sc:cells",
-                        "use_offhand": true,
-                        "search_inventory": true,
-                        "use_in_creative": false
-                    }
+            "minecraft:max_stack_size": 1,
+            "minecraft:should_despawn": false,
+            "minecraft:stacked_by_data": true,
+            "minecraft:tags": {
+                "tags": [
+                    "is_gun",
+                    "is_plasma_rifle"
                 ]
             },
             "minecraft:use_modifiers": {
-                "movement_modifier": 1.0,
-                "use_duration": 0.1
+                "use_duration": 3600
             }
         }
     }

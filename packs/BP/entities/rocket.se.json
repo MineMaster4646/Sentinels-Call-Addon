@@ -1,0 +1,108 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "sc:rocket",
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "component_groups": {
+            "destroy": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+			"minecraft:breathable": {
+				"breathes_solids": true
+			},
+            "minecraft:collision_box": {
+                "width": 0.7,
+                "height": 0.25
+            },
+            "minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+            "minecraft:despawn": {
+				"despawn_from_distance": {
+					"max_distance": 64,
+					"min_distance": 48
+				}
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": [
+							{
+								"test": "on_ground",
+								"subject": "self"
+							}
+						],
+						"event": "destroy_event"
+					},
+					{
+						"filters": [
+							{
+								"test": "actor_health",
+								"operator": ">",
+								"value": 0
+							}
+						],
+						"event": "particles"
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 1
+			},
+			"minecraft:physics": {},
+            "minecraft:projectile": {
+                "angle_offset": 0,
+                "destroy_on_hurt": true,
+                "gravity": 0,
+                "knockback": false,
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": 30,
+                        "knockback": false
+                    },
+                    "stick_in_ground": {
+                        "shake_time": 0
+                    },
+                    "definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "destroy_event",
+							"filters": [
+								{
+									"test": "has_component",
+									"value": "minecraft:projectile",
+									"operator": "!=",
+									"subject": "other"
+								}
+							]
+						}
+					}
+                },
+                "power": 1.3,
+                "shoot_sound": "firework",
+                "offset": [0, 0.5, 0]
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "bullet"
+                ]
+            }
+        },
+        "events": {
+            "destroy_event": {
+                "add": {
+                    "component_groups": [
+                        "destroy"
+                    ]
+                }
+            }
+        }
+    }
+}

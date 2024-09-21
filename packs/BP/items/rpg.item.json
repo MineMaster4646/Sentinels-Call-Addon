@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.70",
+    "format_version": "1.21.30",
     "minecraft:item": {
         "description": {
             "identifier": "sc:rpg",
@@ -17,7 +17,7 @@
             "minecraft:shooter": {
 				"ammunition": [
 					{
-						"item": "sc:rocket",
+						"item": "sc:rockets",
 						"use_offhand": true,
 						"search_inventory": true,
 						"use_in_creative": true
@@ -26,7 +26,10 @@
 				"max_draw_duration": 0,
 				"scale_power_by_draw_duration": false,
 				"charge_on_draw": false
-			}
+			},
+            "minecraft:use_modifiers": {
+                "use_duration": 0.01
+            }
         }
     }
 }

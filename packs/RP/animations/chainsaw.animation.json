@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.chainsaw.idle": {
+			"loop": true,
+			"bones": {
+				"chainsaw": {
+					"rotation": [23.02317, -2.93601, -19.18589],
+					"position": [3.12231, 35.70816, -34.4484]
+				}
+			}
+		},
+		"animation.chainsaw.attack": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"chainsaw": {
+					"rotation": {
+						"0.0": [-27.5, -25, -22],
+						"1.0": [152.5, -25, -22]
+					},
+					"position": [-15, 13, -9]
+				}
+			}
+		}
+	}
+}

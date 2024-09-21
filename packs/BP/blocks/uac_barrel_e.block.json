@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sc:uac_barrel_e",
+            "menu_category": {
+                "category": "construction"
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+	            "origin": [-4, 0, -4],
+	            "size": [8, 13, 8]
+            },
+            "minecraft:geometry": "geometry.uac_barrel",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "sc_uac_barrel",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:selection_box": {
+	            "origin": [-4, 0, -4],
+	            "size": [8, 13, 8]
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sc:shell",
+			"materials": {
+				"default": "drowned"
+			},
+			"textures": {
+				"default": "textures/entity/shell"
+			},
+			"geometry": {
+				"default": "geometry.shell"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

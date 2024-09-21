@@ -1,135 +1,136 @@
 {
-	"resource_pack_name": "sentinels_call_rp",
-	"texture_name": "atlas.terrain",
-	"padding": 8,
-	"num_mip_levels": 4,
-	"texture_data": {
-		"netherrack_top": {
-			"textures": "textures/blocks/netherrack_top"
-		},
-		"nether_gold_ore": {
-      		"side": "textures/blocks/nether_gold_ore",
-      		"down": "textures/blocks/nether_gold_ore"
-    	},
-		"nether_gold_ore_top": {
-			"textures": "textures/blocks/nether_gold_ore_top"
-		},
-		"quartz_ore": {
-	  		"side": "textures/blocks/quartz_ore",
-	  		"down": "textures/blocks/quartz_ore"
-		},
-		"quartz_ore_top": {
-			"textures": "textures/blocks/quartz_ore_top"
-		},
-		"netherrack": {
-			"textures": {
-				"variations": [
-					{
-						"path": "textures/blocks/netherrack",
-						"weight": 1
-					},
-					{
-						"path": "textures/blocks/netherrack1",
-						"weight": 1
-					}
-				]
-			}
-		},
-		"sc_ledge_inv": {
-			"textures": "textures/blocks/ledge_invis"
-		},
-		"sc_swingbar": {
-			"textures": "textures/blocks/swingbar"
-		},
-		"sc_ledge": {
-			"textures": "textures/blocks/ledge"
-		},
-		"sc_jump_pad": {
-			"textures": "textures/blocks/jump_pad"
-		},
-		"sc_uac_wall1": {
-			"textures": "textures/blocks/uac_wall1"
-		},
-		"sc_uac_wall2": {
-			"textures": "textures/blocks/uac_wall2"
-		},
-		"sc_uac_wall3": {
-			"textures": "textures/blocks/uac_wall3"
-		},
-		"sc_uac_wall4_down": {
-			"textures": "textures/blocks/uac_wall4_1"
-		},
-		"sc_uac_wall4_up": {
-			"textures": "textures/blocks/uac_wall4_1"
-		},
-		"sc_uac_wall4_north": {
-			"textures": "textures/blocks/uac_wall4_1"
-		},
-		"sc_uac_wall4_east": {
-			"textures": "textures/blocks/uac_wall4_2"
-		},
-		"sc_uac_wall4_south": {
-			"textures": "textures/blocks/uac_wall4_1"
-		},
-		"sc_uac_wall4_west": {
-			"textures": "textures/blocks/uac_wall4_2"
-		},
-		"sc_uac_wall5": {
-			"textures": "textures/blocks/uac_wall5"
-		},
-		"sc_uac_wall6_down": {
-			"textures": "textures/blocks/uac_wall6_1"
-		},
-		"sc_uac_wall6_up": {
-			"textures": "textures/blocks/uac_wall6_1"
-		},
-		"sc_uac_wall6_north": {
-			"textures": "textures/blocks/uac_wall6_1"
-		},
-		"sc_uac_wall6_east": {
-			"textures": "textures/blocks/uac_wall6_2"
-		},
-		"sc_uac_wall6_south": {
-			"textures": "textures/blocks/uac_wall6_1"
-		},
-		"sc_uac_wall6_west": {
-			"textures": "textures/blocks/uac_wall6_2"
-		},
-		"sc_uac_wall7_down": {
-			"textures": "textures/blocks/uac_wall7_1"
-		},
-		"sc_uac_wall7_up": {
-			"textures": "textures/blocks/uac_wall7_1"
-		},
-		"sc_uac_wall7_north": {
-			"textures": "textures/blocks/uac_wall7_1"
-		},
-		"sc_uac_wall7_east": {
-			"textures": "textures/blocks/uac_wall7_2"
-		},
-		"sc_uac_wall7_south": {
-			"textures": "textures/blocks/uac_wall7_1"
-		},
-		"sc_uac_wall7_west": {
-			"textures": "textures/blocks/uac_wall7_2"
-		},
-		"sc_uac_wall8_down": {
-			"textures": "textures/blocks/uac_wall8_1"
-		},
-		"sc_uac_wall8_up": {
-			"textures": "textures/blocks/uac_wall8_1"
-		},
-		"sc_uac_wall8_north": {
-			"textures": "textures/blocks/uac_wall8_1"
-		},
-		"sc_uac_wall8_east": {
-			"textures": "textures/blocks/uac_wall8_2"
-		},
-		"sc_uac_wall8_south": {
-			"textures": "textures/blocks/uac_wall8_1"
-		},
-		"sc_uac_wall8_west": {
-			"textures": "textures/blocks/uac_wall8_2"
-		}
-	}
+    "resource_pack_name": "Sentinels Call",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "netherrack_top": {
+            "textures": "textures/blocks/netherrack_top"
+        },
+        "nether_gold_ore": {
+            "side": "textures/blocks/nether_gold_ore",
+            "down": "textures/blocks/nether_gold_ore"
+        },
+        "nether_gold_ore_top": {
+            "textures": "textures/blocks/nether_gold_ore_top"
+        },
+        "quartz_ore": {
+            "side": "textures/blocks/quartz_ore",
+            "down": "textures/blocks/quartz_ore"
+        },
+        "quartz_ore_top": {
+            "textures": "textures/blocks/quartz_ore_top"
+        },
+        "sc_ledge_inv": {
+            "textures": "textures/blocks/ledge_invis"
+        },
+        "sc_swingbar": {
+            "textures": "textures/blocks/swingbar"
+        },
+        "sc_ledge": {
+            "textures": "textures/blocks/ledge"
+        },
+        "sc_jump_pad": {
+            "textures": "textures/blocks/jump_pad"
+        },
+        "sc_uac_wall1": {
+            "textures": "textures/blocks/uac_wall1"
+        },
+        "sc_uac_wall2": {
+            "textures": "textures/blocks/uac_wall2"
+        },
+        "sc_uac_wall3": {
+            "textures": "textures/blocks/uac_wall3"
+        },
+        "sc_uac_wall4_down": {
+            "textures": "textures/blocks/uac_wall4_1"
+        },
+        "sc_uac_wall4_up": {
+            "textures": "textures/blocks/uac_wall4_1"
+        },
+        "sc_uac_wall4_north": {
+            "textures": "textures/blocks/uac_wall4_1"
+        },
+        "sc_uac_wall4_east": {
+            "textures": "textures/blocks/uac_wall4_2"
+        },
+        "sc_uac_wall4_south": {
+            "textures": "textures/blocks/uac_wall4_1"
+        },
+        "sc_uac_wall4_west": {
+            "textures": "textures/blocks/uac_wall4_2"
+        },
+        "sc_uac_wall5": {
+            "textures": "textures/blocks/uac_wall5"
+        },
+        "sc_uac_wall6_down": {
+            "textures": "textures/blocks/uac_wall6_1"
+        },
+        "sc_uac_wall6_up": {
+            "textures": "textures/blocks/uac_wall6_1"
+        },
+        "sc_uac_wall6_north": {
+            "textures": "textures/blocks/uac_wall6_1"
+        },
+        "sc_uac_wall6_east": {
+            "textures": "textures/blocks/uac_wall6_2"
+        },
+        "sc_uac_wall6_south": {
+            "textures": "textures/blocks/uac_wall6_1"
+        },
+        "sc_uac_wall6_west": {
+            "textures": "textures/blocks/uac_wall6_2"
+        },
+        "sc_uac_wall7_down": {
+            "textures": "textures/blocks/uac_wall7_1"
+        },
+        "sc_uac_wall7_up": {
+            "textures": "textures/blocks/uac_wall7_1"
+        },
+        "sc_uac_wall7_north": {
+            "textures": "textures/blocks/uac_wall7_1"
+        },
+        "sc_uac_wall7_east": {
+            "textures": "textures/blocks/uac_wall7_2"
+        },
+        "sc_uac_wall7_south": {
+            "textures": "textures/blocks/uac_wall7_1"
+        },
+        "sc_uac_wall7_west": {
+            "textures": "textures/blocks/uac_wall7_2"
+        },
+        "sc_uac_wall8_down": {
+            "textures": "textures/blocks/uac_wall8_1"
+        },
+        "sc_uac_wall8_up": {
+            "textures": "textures/blocks/uac_wall8_1"
+        },
+        "sc_uac_wall8_north": {
+            "textures": "textures/blocks/uac_wall8_1"
+        },
+        "sc_uac_wall8_east": {
+            "textures": "textures/blocks/uac_wall8_2"
+        },
+        "sc_uac_wall8_south": {
+            "textures": "textures/blocks/uac_wall8_1"
+        },
+        "sc_uac_wall8_west": {
+            "textures": "textures/blocks/uac_wall8_2"
+        },
+        "sc_gore_intestines": {
+            "textures": "textures/blocks/gore_intestines"
+        },
+        "sc_gore_meat": {
+            "textures": "textures/blocks/gore_meat"
+        },
+        "sc_uac_barrel": {
+            "textures": "textures/blocks/uac_barrel"
+        },
+        "sc_uac_floor1": {
+            "textures": "textures/blocks/uac_floor1"
+        },
+        "sc_uac_floor2": {
+            "textures": "textures/blocks/uac_floor2"
+        }
+    }
 }
