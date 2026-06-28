@@ -1,0 +1,1 @@
+execute as @s[tag=!d26055f5212646949c264302765ac197] run function player/setup

@@ -1,0 +1,149 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.guns_root": {
+            "initial_state": "first_person",
+            "states": {
+                "first_person": {
+                    "transitions": [
+                        {
+                            "paperdoll": "v.is_paperdoll"
+                        },
+                        {
+                            "third_person": "!v.is_first_person"
+                        }
+                    ]
+                },
+                "paperdoll": {
+                    "animations": [
+                        "humanoid_base_pose",
+                        "look_at_target_ui",
+                        "move.legs",
+                        "cape"
+                    ],
+                    "transitions": [
+                        {
+                            "first_person": "!v.is_paperdoll&&v.is_first_person"
+                        },
+                        {
+                            "third_person": "!v.is_paperdoll&&!v.is_first_person"
+                        }
+                    ]
+                },
+                "third_person": {
+                    "animations": [
+                        "humanoid_base_pose",
+                        "move.legs",
+                        "cape",
+                        {
+                            "riding.legs": "q.is_riding"
+                        },
+                        {
+                            "damage_nearby_mobs": "v.damage_nearby_mobs"
+                        },
+                        {
+                            "swimming": "v.swim_amount"
+                        },
+                        {
+                            "swimming.legs": "v.swim_amount"
+                        },
+                        {
+                            "crawling": "q.is_crawling"
+                        },
+                        {
+                            "crawling.legs": "q.is_crawling"
+                        },
+                        {
+                            "sleeping": "q.is_sleeping&&q.is_alive"
+                        },
+                        {
+                            "shield_block_off_hand": "q.blocking&&q.is_item_name_any('slot.weapon.offhand', 'minecraft:shield')"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "paperdoll": "v.is_paperdoll"
+                        },
+                        {
+                            "first_person": "v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.player.guns_hold": {
+            "initial_state": "first_person",
+            "states": {
+                "first_person": {
+                    "animations": [
+                        "plasma_rifle_controller",
+                        "super_shotgun_controller",
+                        "combat_shotgun_controller"
+                    ],
+                    "transitions": [
+                        {
+                            "third_person": "!v.is_first_person"
+                        }
+                    ]
+                },
+                "third_person": {
+                    "animations": [
+                        {
+                            "plasma_rifle_item": "v.plasma_rifle"
+                        },
+                        {
+                            "super_shotgun_item": "v.super_shotgun"
+                        },
+                        {
+                            "combat_shotgun_item": "v.combat_shotgun"
+                        },
+                        {
+                            "guns_tpp_controller": "v.plasma_rifle"
+                        },
+                        {
+                            "guns_tpp_controller": "v.super_shotgun"
+                        },
+                        {
+                            "guns_tpp_controller": "v.combat_shotgun"
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "first_person": "v.is_first_person"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.player.guns_tpp": {
+            "initial_state": "inactive",
+            "states": {
+                "inactive": {
+                    "transitions": [
+                        {
+                            "hold": "v.guns && !q.is_sleeping && !q.is_emoting && !v.swim_amount && !q.is_crawling"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                },
+                "hold": {
+                    "animations": [
+                        {
+                            "guns_tpp_hold_0": "q.equipped_item_all_tags('slot.weapon.mainhand', 'is_heavy')"
+                        },
+                        {
+                            "guns_tpp_hold_1": "q.equipped_item_all_tags('slot.weapon.mainhand', 'is_light')"
+                        }   
+                    ],
+                    "transitions": [
+                        {
+                            "inactive": "!v.guns||q.is_sleeping||q.is_emoting||v.swim_amount||q.is_crawling"
+                        }
+                    ],
+                    "blend_transition": 0.2
+                }
+
+            }
+        }
+    }
+}

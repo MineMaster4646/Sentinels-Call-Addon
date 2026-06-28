@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.30",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:jump_pad",
@@ -19,7 +19,7 @@
 			"minecraft:geometry": "geometry.jump_pad",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "sc_jump_pad",
+					"texture": "sc:jump_pad",
 					"render_method": "blend"
 				}
 			}

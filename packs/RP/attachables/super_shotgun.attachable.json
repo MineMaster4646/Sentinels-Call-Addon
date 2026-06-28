@@ -1,21 +1,21 @@
 {
-	"format_version": "1.10.0",
+	"format_version": "1.12.0",
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "sc:super_shotgun",
 			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint"
+				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/super_shotgun",
-				"enchanted": "textures/misc/enchanted_item_glint"
+				"default": "textures/misc/none"
 			},
 			"geometry": {
-				"default": "geometry.super_shotgun"
+				"default": "geometry.none"
 			},
 			"render_controllers": [
-				"controller.render.item_default"
+				{
+					"controller.render.default": false
+				}
 			]
 		}
 	}

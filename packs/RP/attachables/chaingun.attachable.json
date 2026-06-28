@@ -1,36 +1,21 @@
 {
-	"format_version": "1.10.0",
+	"format_version": "1.12.0",
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "sc:chaingun",
 			"materials": {
-				"default": "entity_emissive_alpha",
-				"enchanted": "entity_alphatest_glint",
-				"glow": "entity_emissive_alpha"
+				"default": "entity_emissive_alpha"
 			},
 			"textures": {
-				"default": "textures/entity/chaingun",
-				"enchanted": "textures/misc/enchanted_item_glint"
+				"default": "textures/misc/none"
 			},
 			"geometry": {
-				"default": "geometry.chaingun"
-			},
-			"animations": {
-				"cg_hold_third_person": "animation.chaingun.hold_third_person",
-				"cg_shoot": "animation.chaingun.shoot"
-			},
-			"scripts": {
-				"animate": [
-					{
-						"cg_shoot": "q.cooldown_time_remaining ? true : false"
-					}
-				],
-				"pre_animation": [
-					"v.rot_amount=720;"
-				]
+				"default": "geometry.none"
 			},
 			"render_controllers": [
-				"controller.render.item_default"
+				{
+					"controller.render.default": false
+				}
 			]
 		}
 	}

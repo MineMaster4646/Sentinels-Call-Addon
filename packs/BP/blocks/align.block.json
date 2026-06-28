@@ -1,0 +1,24 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sc:align"
+        },
+        "components": {
+            "minecraft:light_dampening": 0,
+            "minecraft:collision_box": false,
+            "minecraft:selection_box": false,
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:geometry": "geometry.empty",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "sc:empty"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+            "sc:align_entity": {}
+        }
+    }
+}

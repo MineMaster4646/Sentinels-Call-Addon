@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.super_shotgun": {
+            "initial_state": "inactive",
+            "states": {
+                "inactive": {
+                    "transitions": [
+                        {
+                            "draw": "v.super_shotgun"
+                        }
+                    ]
+                },
+                "draw": {
+                    "animations": [
+                        "guns_fpp_draw",
+                        "super_shotgun_item",
+                        "super_shotgun_fpp_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "inactive": "!v.super_shotgun"
+                        },
+                        {
+                            "hold": "q.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2,
+                    "blend_via_shortest_path": true
+                },
+                "hold": {
+                    "animations": [
+                        "super_shotgun_item",
+                        "super_shotgun_fpp_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "inactive": "!v.super_shotgun"
+                        }
+                    ],
+                    "blend_transition": 0.2,
+                    "blend_via_shortest_path": true
+                }
+            }
+        }
+    }
+}

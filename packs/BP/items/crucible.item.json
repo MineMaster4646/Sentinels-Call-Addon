@@ -11,7 +11,7 @@
 		"components": {
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:damage": {
-				"value": 5000
+				"value": 9900000
 			},
 			"minecraft:hand_equipped": true,
 			"minecraft:icon": "sc_crucible",

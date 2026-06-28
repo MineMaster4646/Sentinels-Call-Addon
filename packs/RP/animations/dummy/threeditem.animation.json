@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.threeditem.spin": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": [
+                        0,
+                        "q.anim_time*-54",
+                        0
+                    ],
+                    "position": [
+                        0,
+                        "(math.cos(q.anim_time*-112)*4)+8",
+                        0
+                    ]
+                },
+                "waist": {
+                    "position": [
+                        0,
+                        0,
+                        5
+                    ]
+                }
+            }
+        }
+    }
+}

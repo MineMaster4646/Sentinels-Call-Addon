@@ -1,22 +1,25 @@
 {
-	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.2.json",
-	"author": "Andro_AGENT",
-	"name": "Sentinels_Call",
-	"packs": {
-		"behaviorPack": "./packs/BP",
-		"resourcePack": "./packs/RP"
-	},
-	"regolith": {
-		"dataPath": "./packs/data",
-		"filterDefinitions": {},
-		"profiles": {
-			"default": {
-				"export": {
-					"readOnly": false,
-					"target": "development"
-				},
-				"filters": []
-			}
-		}
-	}
+    "$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.4.json",
+    "author": "DOOM's Gate",
+    "name": "sentinels_call",
+    "packs": {
+        "behaviorPack": "./packs/BP",
+        "resourcePack": "./packs/RP"
+    },
+    "regolith": {
+        "dataPath": "./packs/data",
+        "filterDefinitions": {},
+        "formatVersion": "1.4.0",
+        "profiles": {
+            "default": {
+                "export": {
+                    "target": "development",
+                    "build": "standard",
+                    "rpName": "",
+                    "bpName": ""
+                },
+                "filters": []
+            }
+        }
+    }
 }

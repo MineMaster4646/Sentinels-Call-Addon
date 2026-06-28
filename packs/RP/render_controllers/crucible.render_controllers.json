@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.crucible": {
+            "geometry": "geometry.crucible",
+            "materials": [
+                {
+                    "*": "material.crucible"
+                }
+            ],
+            "textures": [
+                "texture.crucible"
+            ],
+            "part_visibility": [
+                {
+                    "head": false
+                },
+                {
+                    "body": false
+                },
+                {
+                    "leftArm": false
+                },
+                {
+                    "rightArmExtra": false
+                },
+                {
+                    "leftLeg": false
+                },
+                {
+                    "rightLeg": false
+                }
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {}
+        }
+    }
+}

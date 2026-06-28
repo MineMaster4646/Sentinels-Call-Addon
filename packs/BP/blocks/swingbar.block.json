@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.30",
+	"format_version": "1.21.70",
 	"minecraft:block": {
 		"description": {
 			"identifier": "sc:swingbar",
@@ -17,7 +17,7 @@
 			"minecraft:geometry": "geometry.swingbar",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "sc_swingbar",
+					"texture": "sc:swingbar",
 					"render_method": "alpha_test"
 				}
 			},

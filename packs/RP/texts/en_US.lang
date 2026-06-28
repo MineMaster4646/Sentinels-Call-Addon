@@ -1,7 +1,7 @@
 pack.name=Sentinel's Call Addon
 pack.description=Unleash the fury of DOOM in Minecraft with this action-packed addon. Battle against hordes of demonic monsters, wield iconic weapons like the BFG-9000, and don the Doom Slayer’s armor for the ultimate crossover experience. Perfect for fans of both franchises looking to add a thrilling new dimension to their Minecraft gameplay.
 item.sc:super_shotgun=Super Shotgun
-item.sc:shotgun=Combat Shotgun
+item.sc:combat_shotgun=Combat Shotgun
 entity.sc:bullet.name=Bullet
 entity.sc:meat_hook.name=Meat Hook
 entity.sc:meat_hook_ride.name=Meat Hook [DEV]
@@ -24,7 +24,7 @@ item.spawn_egg.entity.sc:marauder.name=Spawn Marauder
 entity.sc:marauder.name=Marauder
 item.sc:argent_axe=Argent Axe
 item.sc:bfg=BFG 9000
-item.sc:cells=Cells
+item.cells.name=Cells
 item.sc:plasma_rifle=UAC D-93 Model Plasma Rifle
 tile.sc:uac_wall1.name=UAC Wall (White & Blue)
 tile.sc:uac_wall2.name=UAC Wall (Blue & White)

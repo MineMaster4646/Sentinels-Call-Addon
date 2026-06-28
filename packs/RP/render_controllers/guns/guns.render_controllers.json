@@ -1,0 +1,104 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.plasma_rifle": {
+            "geometry": "geometry.plasma_rifle",
+            "materials": [
+                {
+                    "*": "material.gun"
+                }
+            ],
+            "textures": [
+                "texture.plasma_rifle"
+            ],
+            "part_visibility": [
+                {
+                    "head": false
+                },
+                {
+                    "body": false
+                },
+                {
+                    "leftArm": false
+                },
+                {
+                    "rightArmExtra": false
+                },
+                {
+                    "leftLeg": false
+                },
+                {
+                    "rightLeg": false
+                }
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {}
+        },
+        "controller.render.super_shotgun": {
+            "geometry": "geometry.super_shotgun",
+            "materials": [
+                {
+                    "*": "material.gun"
+                }
+            ],
+            "textures": [
+                "texture.super_shotgun"
+            ],
+            "part_visibility": [
+                {
+                    "head": false
+                },
+                {
+                    "body": false
+                },
+                {
+                    "leftArm": false
+                },
+                {
+                    "rightArmExtra": false
+                },
+                {
+                    "leftLeg": false
+                },
+                {
+                    "rightLeg": false
+                }
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {}
+        },
+        "controller.render.combat_shotgun": {
+            "geometry": "geometry.combat_shotgun",
+            "materials": [
+                {
+                    "*": "material.gun"
+                }
+            ],
+            "textures": [
+                "texture.combat_shotgun"
+            ],
+            "part_visibility": [
+                {
+                    "head": false
+                },
+                {
+                    "body": false
+                },
+                {
+                    "leftArm": false
+                },
+                {
+                    "rightArmExtra": false
+                },
+                {
+                    "leftLeg": false
+                },
+                {
+                    "rightLeg": false
+                }
+            ],
+            "is_hurt_color": {},
+            "on_fire_color": {}
+        }
+    }
+}

@@ -19,7 +19,7 @@
 			},
 			"minecraft:icon": "sc_praetor_boots",
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 5,
 				"slot": "slot.armor.feet"
 			},
 			"minecraft:repairable": {

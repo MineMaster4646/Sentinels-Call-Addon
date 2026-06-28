@@ -1,23 +1,22 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:attachable": {
-		"description": {
-			"identifier": "sc:heavy_cannon",
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint",
-				"glow": "entity_emissive_alpha"
-			},
-			"textures": {
-				"default": "textures/entity/heavy_cannon",
-				"enchanted": "textures/misc/enchanted_item_glint_fire"
-			},
-			"geometry": {
-				"default": "geometry.heavy_cannon"
-			},
-			"render_controllers": [
-				"controller.render.item_default"
-			]
-		}
-	}
+    "format_version": "1.12.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "sc:heavy_cannon",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "textures/misc/none"
+            },
+            "geometry": {
+                "default": "geometry.none"
+            },
+            "render_controllers": [
+                {
+                    "controller.render.default": false
+                }
+            ]
+        }
+    }
 }

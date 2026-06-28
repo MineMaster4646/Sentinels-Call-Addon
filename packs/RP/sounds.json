@@ -1,17 +1,5 @@
 {
-	"entity_sounds": {
-		"entities": {
-			"sc:plasma": {
-				"volume": 100,
-				"pitch": [1.0],
-				"events": {
-					"shoot_sound": {
-						"sound": "plasma_rifle",
-						"volume": 100,
-						"pitch": 1.0
-					}
-				}
-			}
-		}
-	}
+    "entity_sounds": {
+        "entities": {}
+    }
 }

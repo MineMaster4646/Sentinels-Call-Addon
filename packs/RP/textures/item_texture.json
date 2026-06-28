@@ -8,8 +8,8 @@
 		"sc_cells": {
 			"textures": "textures/items/cells"
 		},
-		"sc_shotgun": {
-			"textures": "textures/items/shotgun"
+		"sc_combat_shotgun": {
+			"textures": "textures/items/combat_shotgun"
 		},
 		"sc_heavy_cannon": {
 			"textures": "textures/items/heavy_cannon"

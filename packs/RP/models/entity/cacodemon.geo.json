@@ -1,0 +1,77 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cacodemon",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 10,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-15, 0, -15], "size": [30, 30, 30], "uv": [0, 0]},
+						{"origin": [-17, 30, -2], "size": [36, 4, 4], "uv": [-1, 60]},
+						{"origin": [-19, 0, -2], "size": [4, 30, 4], "uv": [46, 68]},
+						{"origin": [-7, -6, -4], "size": [15, 6, 8], "uv": [0, 68]},
+						{"origin": [15, 25, -3.5], "size": [4, 5, 7], "uv": [-1, 82]},
+						{"origin": [15, 13, -3.5], "size": [4, 5, 7], "uv": [-1, 82]}
+					]
+				},
+				{
+					"name": "eye",
+					"parent": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [12, 18, -3.5], "size": [7, 7, 7], "uv": [62, 68]}
+					]
+				},
+				{
+					"name": "mouth",
+					"parent": "head",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "frontLeftLeg",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "frontRightLeg",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "backLeftLeg",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "backRightLeg",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

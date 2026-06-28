@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.super_shotgun.item": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"rotation": [90, 0, 0],
+					"position": [-8.5, -12.2, -16],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.super_shotgun.fpp_draw": {},
+		"animation.super_shotgun.fpp_hold": {
+			"loop": "hold_on_last_frame",
+			"anim_time_update": "q.anim_time + q.delta_time * 0.1",
+			"bones": {
+				"body": {
+					"rotation": [
+						"q.is_sneaking?0:math.sin(q.anim_time-q.life_time*100)*0.2",
+						"q.is_sneaking?0:math.cos(q.anim_time-q.life_time*200)*0.4",
+						"q.is_sneaking?0:math.cos(q.anim_time-q.life_time*80)*0.4"
+					]
+				},
+				"leftArm": {
+					"rotation": [-90, 37.5, 0],
+					"position": [-5.25, -3.5, -4]
+				},
+				"rightArm": {
+					"rotation": [-90, 0, 0],
+					"position": [2.5, -1, 3]
+				},
+				"root": {
+					"rotation": [0, 180, 0]
+				}
+			}
+		}
+	}
+}

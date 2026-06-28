@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "sc:zombie",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/sc_zombie"
+            },
+            "geometry": {
+                "default": "geometry.sc_zombie"
+            },
+            "animations": {
+                "idle": "animation.sc_zombie.idle",
+                "walk": "animation.sc_zombie.walk",
+                "sc_zombie_controller": "controller.animation.sc_zombie"
+            },
+            "scripts": {
+                "animate": [
+                    "sc_zombie_controller"
+                ]
+            },
+            "render_controllers": ["controller.render.sc_zombie"],
+            "spawn_egg": {
+                "base_color": "#D1C59C",
+                "overlay_color": "#A49977"
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.crucible": {
+            "initial_state": "inactive",
+            "states": {
+                "inactive": {
+                    "transitions": [
+                        {
+                            "draw": "v.crucible"
+                        }
+                    ]
+                },
+                "draw": {
+                    "animations": [
+                        "crucible_fpp_draw",
+                        "crucible_item",
+                        "crucible_fpp_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "inactive": "!v.crucible"
+                        },
+                        {
+                            "hold": "q.all_animations_finished"
+                        }
+                    ],
+                    "blend_transition": 0.2,
+                    "blend_via_shortest_path": true
+                },
+                "hold": {
+                    "animations": [
+                        "crucible_item",
+                        "crucible_fpp_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "inactive": "!v.crucible"
+                        }
+                    ],
+                    "blend_transition": 0.2,
+                    "blend_via_shortest_path": true
+                }
+            }
+        }
+    }
+}

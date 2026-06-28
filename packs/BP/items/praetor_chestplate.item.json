@@ -24,7 +24,7 @@
 				]
 			},
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 10,
 				"slot": "slot.armor.chest"
 			},
 			"minecraft:durability": {

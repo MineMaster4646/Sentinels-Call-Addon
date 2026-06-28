@@ -19,6 +19,7 @@
 			},
 			"minecraft:icon": "sc_praetor_leggings",
 			"minecraft:wearable": {
+				"protection": 8,
 				"slot": "slot.armor.legs"
 			},
 			"minecraft:repairable": {

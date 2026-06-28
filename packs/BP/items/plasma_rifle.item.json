@@ -20,6 +20,7 @@
             "minecraft:tags": {
                 "tags": [
                     "is_gun",
+                    "is_heavy",
                     "is_plasma_rifle"
                 ]
             },

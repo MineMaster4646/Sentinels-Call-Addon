@@ -1,0 +1,3 @@
+titleraw @s[scores={plasma_rifle=51..}] actionbar {"rawtext":[{"text":"[ §7"},{"score":{"name":"@s","objective":"plasma_rifle"}},{"text":"§r/200 ]"}]}
+titleraw @s[scores={plasma_rifle=1..50}] actionbar {"rawtext":[{"text":"[ §c"},{"score":{"name":"@s","objective":"plasma_rifle"}},{"text":"§r/200 ]"}]}
+titleraw @s[scores={plasma_rifle=..0}] actionbar {"rawtext":[{"text":"[ §4"},{"score":{"name":"@s","objective":"plasma_rifle"}},{"text":"§r/200 ]"}]}

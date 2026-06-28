@@ -19,7 +19,7 @@
 			},
 			"minecraft:icon": "sc_praetor_helmet",
 			"minecraft:wearable": {
-				"dispensable": true,
+				"protection": 5,
 				"slot": "slot.armor.head"
 			},
 			"minecraft:repairable": {
