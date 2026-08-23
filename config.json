@@ -1,7 +1,7 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.4.json",
-    "author": "DOOM's Gate",
-    "name": "sentinels_call",
+    "$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/unified.json",
+    "author": "Team Crucibility",
+    "name": "Sentinel's Call",
     "packs": {
         "behaviorPack": "./packs/BP",
         "resourcePack": "./packs/RP"
@@ -9,14 +9,13 @@
     "regolith": {
         "dataPath": "./packs/data",
         "filterDefinitions": {},
-        "formatVersion": "1.4.0",
+        "formatVersion": "1.8.0",
         "profiles": {
             "default": {
                 "export": {
-                    "target": "development",
-                    "build": "standard",
-                    "rpName": "",
-                    "bpName": ""
+                    "target": "exact",
+                    "rpPath": "%APPDATA%/levilauncher.exe/versions/1.26.44.03/Minecraft Bedrock/Users/Shared/games/com.mojang/development_resource_packs",
+                    "bpPath": "%APPDATA%/levilauncher.exe/versions/1.26.44.03/Minecraft Bedrock/Users/Shared/games/com.mojang/development_behavior_packs"
                 },
                 "filters": []
             }

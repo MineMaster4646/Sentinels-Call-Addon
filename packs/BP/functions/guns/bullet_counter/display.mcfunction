@@ -1,2 +1,0 @@
-execute as @s[hasitem={item=sc:plasma_rifle, location=slot.weapon.mainhand}] run function guns/bullet_counter/plasma_rifle
-execute as @s[hasitem={item=sc:super_shotgun, location=slot.weapon.mainhand}] run function guns/bullet_counter/super_shotgun

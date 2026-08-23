@@ -1,3 +1,0 @@
-titleraw @s[scores={super_shotgun=6..}] actionbar {"rawtext":[{"text":"[ §7"},{"score":{"name":"@s","objective":"super_shotgun"}},{"text":"§r/24 ]"}]}
-titleraw @s[scores={super_shotgun=3..6}] actionbar {"rawtext":[{"text":"[ §c"},{"score":{"name":"@s","objective":"super_shotgun"}},{"text":"§r/24 ]"}]}
-titleraw @s[scores={super_shotgun=..2}] actionbar {"rawtext":[{"text":"[ §4"},{"score":{"name":"@s","objective":"super_shotgun"}},{"text":"§r/24 ]"}]}

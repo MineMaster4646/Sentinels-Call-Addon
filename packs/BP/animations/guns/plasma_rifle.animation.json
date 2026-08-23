@@ -1,9 +1,0 @@
-{
-    "format_version": "1.10.0",
-    "animations": {
-        "animation.player.plasma_rifle.fire": {
-            "animation_length": 0.04,
-            "loop": false
-        }
-    }
-}
